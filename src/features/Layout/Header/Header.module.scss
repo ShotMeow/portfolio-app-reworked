@@ -1,0 +1,7 @@
+.header {
+  @apply flex items-center justify-between pt-4;
+
+  > h1 {
+    @apply text-3xl font-bold;
+  }
+}

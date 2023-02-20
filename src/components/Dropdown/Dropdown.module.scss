@@ -1,0 +1,7 @@
+.dropdown {
+  @apply hidden absolute;
+
+  &.shown {
+    @apply block;
+  }
+}
