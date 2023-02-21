@@ -21,5 +21,5 @@ export const getSavedLocale = (): Locale => {
     return navLang;
   }
 
-  return Locale.en;
+  return Locale.EN;
 };

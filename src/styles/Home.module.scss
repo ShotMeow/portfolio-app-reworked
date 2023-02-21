@@ -27,7 +27,7 @@
       @apply relative;
 
       svg {
-        @apply absolute bottom-0 left-0;
+        @apply absolute -bottom-10 -left-10;
       }
 
       .swiper {

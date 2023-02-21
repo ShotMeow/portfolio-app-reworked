@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        "5xl": "60px",
+      },
       colors: {
         gray: "#646970",
         blue: "#3B82F6",
@@ -13,7 +16,7 @@ module.exports = {
         black: "#14191F",
       },
       fontFamily: {
-        jetbrains: ["JetBrains Mono", "monospace"],
+        jetbrains: ["JetBrains Mono", "sans-serif"],
       },
       boxShadow: {
         lg: "0px 4px 60px 4px rgba(0, 0, 0, 0.25)",
