@@ -15,6 +15,7 @@ import styles from "./Dropdown.module.scss";
 interface Props extends HTMLAttributes<HTMLDivElement> {
   targetRef: RefObject<HTMLElement>;
   onShownChange: React.Dispatch<React.SetStateAction<boolean>>;
+  shown: boolean;
 }
 
 const Dropdown: FC<PropsWithChildren<Props>> = ({
@@ -22,6 +23,7 @@ const Dropdown: FC<PropsWithChildren<Props>> = ({
   onShownChange,
   targetRef,
   className,
+  shown,
   ...props
 }) => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -29,14 +31,15 @@ const Dropdown: FC<PropsWithChildren<Props>> = ({
   useEffect(() => {
     const trap = createFocusTrap(ref.current as HTMLDivElement, {
       allowOutsideClick: true,
+      clickOutsideDeactivates: true,
     });
 
-    trap.activate();
+    shown && trap.activate();
 
     return () => {
       trap.deactivate();
     };
-  }, [targetRef]);
+  }, [shown, targetRef]);
 
   useEffect(() => {
     const documentClickListener = () => {
@@ -49,6 +52,10 @@ const Dropdown: FC<PropsWithChildren<Props>> = ({
       document.removeEventListener("click", documentClickListener);
     };
   }, [onShownChange]);
+
+  useEffect(() => {
+    onShownChange(shown);
+  }, [shown, onShownChange]);
 
   return (
     <motion.div

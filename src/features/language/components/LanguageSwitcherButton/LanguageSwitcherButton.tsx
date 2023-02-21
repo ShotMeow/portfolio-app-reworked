@@ -1,7 +1,7 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
 import styles from "./LanguageSwitcherButton.module.scss";
-import { Locale } from "@/features/Layout/Header/LanguageSwitcher/types";
+import { Locale } from "@/features/language/types";
 import Arrow from "@/components/Icons/Arrow";
 import classNames from "classnames";
 

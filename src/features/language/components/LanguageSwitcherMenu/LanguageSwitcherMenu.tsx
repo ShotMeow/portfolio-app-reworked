@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import styles from "./LanguageSwitcherMenu.module.scss";
-import { Locale } from "@/features/Layout/Header/LanguageSwitcher/types";
+import { Locale } from "@/features/language/types";
 import classNames from "classnames";
 
 interface Props {

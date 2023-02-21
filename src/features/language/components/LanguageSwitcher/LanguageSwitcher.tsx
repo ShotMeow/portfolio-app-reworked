@@ -1,9 +1,9 @@
 import React, { FC, useRef, useState } from "react";
-import { useLocale } from "@/features/Layout/Header/LanguageSwitcher/hooks";
+import { useLocale } from "@/features/language/hooks";
 
 import styles from "./LanguageSwitcher.module.scss";
-import LanguageSwitcherButton from "@/features/Layout/Header/LanguageSwitcher/components/LanguageSwitcherButton/LanguageSwitcherButton";
-import LanguageSwitcherMenu from "@/features/Layout/Header/LanguageSwitcher/components/LanguageSwitcherMenu/LanguageSwitcherMenu";
+import LanguageSwitcherButton from "@/features/language/components/LanguageSwitcherButton/LanguageSwitcherButton";
+import LanguageSwitcherMenu from "@/features/language/components/LanguageSwitcherMenu/LanguageSwitcherMenu";
 import Dropdown from "@/components/Dropdown/Dropdown";
 import { AnimatePresence } from "framer-motion";
 
@@ -25,7 +25,11 @@ const LanguageSwitcher: FC = () => {
       />
       <AnimatePresence>
         {dropdownShown && (
-          <Dropdown targetRef={targetRef} onShownChange={setDropdownShown}>
+          <Dropdown
+            shown={dropdownShown}
+            targetRef={targetRef}
+            onShownChange={setDropdownShown}
+          >
             <LanguageSwitcherMenu
               locale={locale}
               onChangeLocale={(locale) => setLocale(locale)}

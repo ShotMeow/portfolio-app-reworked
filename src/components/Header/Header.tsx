@@ -9,18 +9,14 @@ import Vkontakte from "@/components/Icons/Vkontakte";
 import Behance from "@/components/Icons/Behance";
 
 const LanguageSwitcher = dynamic(
-  import(
-    "@/features/Layout/Header/LanguageSwitcher/components/LanguageSwitcher/LanguageSwitcher"
-  ),
+  import("@/features/language/components/LanguageSwitcher/LanguageSwitcher"),
   {
     ssr: false,
   }
 );
 
 const ThemeSwitcher = dynamic(
-  import(
-    "@/features/Layout/Header/ThemeSwitcher/components/ThemeSwitcher/ThemeSwitcher"
-  ),
+  import("@/features/theme/components/ThemeSwitcher/ThemeSwitcher"),
   {
     ssr: false,
   }

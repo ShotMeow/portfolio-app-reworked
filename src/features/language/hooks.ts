@@ -1,9 +1,6 @@
-import { Locale } from "@/features/Layout/Header/LanguageSwitcher/types";
+import { Locale } from "@/features/language/types";
 import { Dispatch, useEffect, useState } from "react";
-import {
-  applyLocale,
-  getSavedLocale,
-} from "@/features/Layout/Header/LanguageSwitcher/utils";
+import { applyLocale, getSavedLocale } from "@/features/language/utils";
 
 export const useLocale = (): {
   locale: Locale;

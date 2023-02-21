@@ -1,4 +1,4 @@
-import { Locale } from "@/features/Layout/Header/LanguageSwitcher/types";
+import { Locale } from "@/features/language/types";
 
 const LS_LOCALE_KEY = "portfolio:locale";
 

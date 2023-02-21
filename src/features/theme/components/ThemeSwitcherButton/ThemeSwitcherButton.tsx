@@ -1,7 +1,7 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
 import styles from "./ThemeSwitcherButton.module.scss";
-import { ColorScheme } from "@/features/Layout/Header/ThemeSwitcher/types";
+import { ColorScheme } from "@/features/theme/types";
 import Sun from "@/components/Icons/Sun";
 import Moon from "@/components/Icons/Moon";
 import Auto from "@/components/Icons/Auto";

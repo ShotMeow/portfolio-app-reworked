@@ -1,11 +1,11 @@
 import React, { FC, useRef, useState } from "react";
 
 import styles from "./ThemeSwitcher.module.scss";
-import ThemeSwitcherButton from "@/features/Layout/Header/ThemeSwitcher/components/ThemeSwitcherButton/ThemeSwitcherButton";
-import ThemeSwitcherMenu from "@/features/Layout/Header/ThemeSwitcher/components/ThemeSwitcherMenu/ThemeSwitcherMenu";
+import ThemeSwitcherButton from "@/features/theme/components/ThemeSwitcherButton/ThemeSwitcherButton";
+import ThemeSwitcherMenu from "@/features/theme/components/ThemeSwitcherMenu/ThemeSwitcherMenu";
 import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
-import { useColorScheme } from "@/features/Layout/Header/ThemeSwitcher/hooks";
+import { useColorScheme } from "@/features/theme/hooks";
 
 const Dropdown = dynamic(import("@/components/Dropdown/Dropdown"), {
   ssr: false,
@@ -28,7 +28,11 @@ const ThemeSwitcher: FC = () => {
       />
       <AnimatePresence>
         {dropdownShown && (
-          <Dropdown targetRef={targetRef} onShownChange={setDropdownShown}>
+          <Dropdown
+            shown={dropdownShown}
+            targetRef={targetRef}
+            onShownChange={setDropdownShown}
+          >
             <ThemeSwitcherMenu
               colorScheme={colorScheme}
               setColorScheme={setColorScheme}

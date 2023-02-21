@@ -1,6 +1,9 @@
-import { Inter } from "@next/font/google";
-import Layout from "@/features/Layout/Layout";
+import React from "react";
+import { NextPage } from "next";
+import Layout from "@/components/Layout/Layout";
 
-export default function Home() {
+const HomePage: NextPage = () => {
   return <Layout></Layout>;
-}
+};
+
+export default HomePage;
