@@ -1,7 +1,12 @@
 .layout {
-  @apply h-full bg-gradient-to-t from-blue-dark to-blue-light bg-cover py-4;
+  @apply h-full bg-gradient-to-t from-blue-dark to-blue-light bg-cover;
 
-  > div {
-    @apply container mx-auto;
+  > .noise {
+    @apply h-full;
+    background-image: url("../../assets/noise.svg");
+
+    > div {
+      @apply container mx-auto;
+    }
   }
 }

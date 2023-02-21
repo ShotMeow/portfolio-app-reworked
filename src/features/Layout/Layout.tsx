@@ -6,8 +6,10 @@ import Header from "@/features/Layout/Header/Header";
 const Layout: FC = () => {
   return (
     <div className={styles.layout}>
-      <div>
-        <Header />
+      <div className={styles.noise}>
+        <div>
+          <Header />
+        </div>
       </div>
     </div>
   );
