@@ -45,24 +45,24 @@ const Header: FC = () => {
         </div>
         <ul className={styles.socials}>
           <li>
-            <button>
+            <Link href="https://github.com/ShotMeow">
               <GitHub />
-            </button>
+            </Link>
           </li>
           <li>
-            <button>
+            <Link href="https://t.me/shotmeow">
               <Telegram />
-            </button>
+            </Link>
           </li>
           <li>
-            <button>
+            <Link href="https://vk.com/shotmeow">
               <Vkontakte />
-            </button>
+            </Link>
           </li>
           <li>
-            <button>
+            <Link href="https://www.behance.net/shotmeow">
               <Behance />
-            </button>
+            </Link>
           </li>
         </ul>
       </div>
