@@ -19,5 +19,17 @@
     > .socials {
       @apply flex items-center gap-4;
     }
+
+    @media (max-width: 1023px) {
+      @apply hidden;
+    }
+  }
+
+  > .menu {
+    @apply hidden;
+
+    @media (max-width: 1023px) {
+      @apply block;
+    }
   }
 }

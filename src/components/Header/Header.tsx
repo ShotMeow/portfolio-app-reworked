@@ -7,6 +7,7 @@ import GitHub from "@/components/Icons/GitHub";
 import Telegram from "@/components/Icons/Telegram";
 import Vkontakte from "@/components/Icons/Vkontakte";
 import Behance from "@/components/Icons/Behance";
+import Menu from "@/components/Icons/Menu";
 
 const LanguageSwitcher = dynamic(
   import("@/features/language/components/LanguageSwitcher/LanguageSwitcher"),
@@ -65,6 +66,11 @@ const Header: FC = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className={styles.menu}>
+        <button>
+          <Menu />
+        </button>
       </div>
     </header>
   );

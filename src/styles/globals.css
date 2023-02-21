@@ -11,5 +11,5 @@ body,
 }
 
 body {
-  @apply text-white font-jetbrains;
+  @apply text-white font-jetbrains overflow-x-hidden;
 }
