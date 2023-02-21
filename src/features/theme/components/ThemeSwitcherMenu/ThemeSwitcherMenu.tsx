@@ -24,6 +24,7 @@ const ThemeSwitcherMenu: FC<Props> = ({
         {
           [styles.menu]: true,
         },
+        "dark:bg-black",
         className
       )}
       {...props}

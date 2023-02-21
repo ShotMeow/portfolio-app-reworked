@@ -11,7 +11,14 @@ interface Props {
 
 const LanguageSwitcherMenu: FC<Props> = ({ locale, onChangeLocale }) => {
   return (
-    <ul className={styles.menu}>
+    <ul
+      className={classNames(
+        {
+          [styles.menu]: true,
+        },
+        "dark:bg-black"
+      )}
+    >
       <li>
         <button
           className={classNames({

@@ -11,5 +11,5 @@ body,
 }
 
 body {
-  @apply text-white font-jetbrains overflow-x-hidden;
+  @apply transition-all text-black dark:text-white font-jetbrains overflow-x-hidden;
 }

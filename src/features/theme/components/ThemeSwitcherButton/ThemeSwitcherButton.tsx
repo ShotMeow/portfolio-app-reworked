@@ -5,6 +5,7 @@ import { ColorScheme } from "@/features/theme/types";
 import Sun from "@/components/Icons/Sun";
 import Moon from "@/components/Icons/Moon";
 import Auto from "@/components/Icons/Auto";
+import classNames from "classnames";
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
   colorScheme: ColorScheme;
@@ -13,7 +14,16 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
 const ThemeSwitcherButton = forwardRef<HTMLButtonElement, Props>(
   ({ colorScheme, ...props }, ref) => {
     return (
-      <button className={styles.button} ref={ref} {...props}>
+      <button
+        className={classNames(
+          {
+            [styles.button]: true,
+          },
+          "dark:bg-black"
+        )}
+        ref={ref}
+        {...props}
+      >
         {colorScheme === ColorScheme.AUTO && <Auto />}
         {colorScheme === ColorScheme.LIGHT && <Sun />}
         {colorScheme === ColorScheme.DARK && <Moon />}

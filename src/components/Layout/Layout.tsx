@@ -2,10 +2,18 @@ import React, { FC, PropsWithChildren } from "react";
 
 import styles from "./Layout.module.scss";
 import Header from "@/components/Header/Header";
+import classNames from "classnames";
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className={styles.layout}>
+    <div
+      className={classNames(
+        {
+          [styles.layout]: true,
+        },
+        "dark:bg-gradient-to-t"
+      )}
+    >
       <div className={styles.noise}>
         <div>
           <Header />

@@ -35,10 +35,6 @@
     .picture {
       @apply relative;
 
-      svg {
-        @apply absolute -bottom-10 -left-10;
-      }
-
       .swiper {
         width: 400px;
         .slide {

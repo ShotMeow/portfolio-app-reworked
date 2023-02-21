@@ -3,7 +3,6 @@ import { NextPage } from "next";
 import Layout from "@/components/Layout/Layout";
 import Head from "next/head";
 
-import BgEllipse from "@/components/Icons/BgEllipse";
 import Image from "next/image";
 
 import myPhoto from "@/assets/me.jpg";
@@ -39,7 +38,6 @@ const HomePage: NextPage = () => {
             </p>
           </div>
           <div className={styles.picture}>
-            <BgEllipse />
             <Swiper
               effect={"cards"}
               grabCursor={true}
