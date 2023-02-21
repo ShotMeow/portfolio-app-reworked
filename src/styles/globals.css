@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body,
+#__next {
   @apply h-full;
 }
 
 body {
-  @apply bg-gradient-to-t from-blue-dark to-blue-light bg-cover text-white font-jetbrains;
+  @apply text-white font-jetbrains;
 }

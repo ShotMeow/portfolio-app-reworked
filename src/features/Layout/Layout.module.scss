@@ -1,4 +1,6 @@
 .layout {
+  @apply h-full bg-gradient-to-t from-blue-dark to-blue-light bg-cover py-4;
+
   > div {
     @apply container mx-auto;
   }

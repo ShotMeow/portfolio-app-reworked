@@ -5,38 +5,25 @@ import React, {
   RefObject,
   useEffect,
   useRef,
-  useState,
 } from "react";
 import { createFocusTrap } from "focus-trap";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 import styles from "./Dropdown.module.scss";
-import { createPortal } from "react-dom";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   targetRef: RefObject<HTMLElement>;
-  shown: boolean;
   onShownChange: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const calcPosition = (targetElement: HTMLElement) => {
-  const rect = targetElement.getBoundingClientRect();
-
-  return {
-    top: window.scrollY + rect.bottom + 12,
-    right: window.innerWidth - rect.right - window.scrollX,
-  };
-};
-
 const Dropdown: FC<PropsWithChildren<Props>> = ({
   children,
-  shown,
   onShownChange,
   targetRef,
   className,
   ...props
 }) => {
-  const [position, setPosition] = useState({ top: 0, right: 0 });
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -44,32 +31,44 @@ const Dropdown: FC<PropsWithChildren<Props>> = ({
       allowOutsideClick: true,
     });
 
-    if (shown) {
-      trap.activate();
-      setPosition(calcPosition(targetRef.current as HTMLElement));
-    }
+    trap.activate();
 
     return () => {
       trap.deactivate();
     };
-  }, [shown, targetRef]);
+  }, [targetRef]);
 
-  return createPortal(
-    <div
-      ref={ref}
-      className={classNames(
-        {
-          [styles.dropdown]: true,
-          [styles.shown]: shown,
-        },
-        className
-      )}
-      style={position}
-      {...props}
+  useEffect(() => {
+    const documentClickListener = () => {
+      onShownChange(false);
+    };
+
+    document.addEventListener("click", documentClickListener);
+
+    return () => {
+      document.removeEventListener("click", documentClickListener);
+    };
+  }, [onShownChange]);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -40 }}
+      animate={{ opacity: 1, y: -20 }}
+      exit={{ opacity: 0 }}
     >
-      {children}
-    </div>,
-    document.getElementById("overlay") as HTMLElement
+      <div
+        ref={ref}
+        className={classNames(
+          {
+            [styles.dropdown]: true,
+          },
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </div>
+    </motion.div>
   );
 };
 

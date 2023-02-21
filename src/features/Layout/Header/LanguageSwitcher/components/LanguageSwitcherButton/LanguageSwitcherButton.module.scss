@@ -1,0 +1,17 @@
+.button {
+  @apply flex items-center gap-2;
+
+  > .text {
+    @apply text-xl;
+  }
+
+  > .icon {
+    @apply transition-all duration-300;
+  }
+
+  &.active {
+    > .icon {
+      @apply rotate-180;
+    }
+  }
+}

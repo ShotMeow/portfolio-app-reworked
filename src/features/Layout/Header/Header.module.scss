@@ -1,7 +1,23 @@
 .header {
-  @apply flex items-center justify-between pt-4;
+  @apply flex items-center justify-between;
 
   > h1 {
     @apply text-3xl font-bold;
+  }
+
+  > .other {
+    @apply flex items-center gap-14;
+
+    > .navigation > ul {
+      @apply flex items-center gap-6;
+    }
+
+    .switchers {
+      @apply flex items-center gap-6;
+    }
+
+    > .socials {
+      @apply flex items-center gap-4;
+    }
   }
 }

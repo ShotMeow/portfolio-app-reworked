@@ -3,7 +3,7 @@
 
   > li {
     > button {
-      @apply flex items-center gap-4 px-6 py-3 w-full;
+      @apply px-10 py-3;
 
       &:hover,
       &.active {

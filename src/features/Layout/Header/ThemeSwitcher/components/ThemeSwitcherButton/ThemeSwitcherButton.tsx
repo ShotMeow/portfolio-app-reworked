@@ -1,21 +1,22 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
 import styles from "./ThemeSwitcherButton.module.scss";
+import { ColorScheme } from "@/features/Layout/Header/ThemeSwitcher/types";
+import Sun from "@/components/Icons/Sun";
+import Moon from "@/components/Icons/Moon";
+import Auto from "@/components/Icons/Auto";
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
-  onShownChange: React.Dispatch<React.SetStateAction<boolean>>;
+  colorScheme: ColorScheme;
 }
 
 const ThemeSwitcherButton = forwardRef<HTMLButtonElement, Props>(
-  ({ onShownChange, ...props }, ref) => {
+  ({ colorScheme, ...props }, ref) => {
     return (
-      <button
-        className={styles.button}
-        ref={ref}
-        onClick={() => onShownChange((prev) => !prev)}
-        {...props}
-      >
-        Button
+      <button className={styles.button} ref={ref} {...props}>
+        {colorScheme === ColorScheme.AUTO && <Auto />}
+        {colorScheme === ColorScheme.LIGHT && <Sun />}
+        {colorScheme === ColorScheme.DARK && <Moon />}
       </button>
     );
   }
