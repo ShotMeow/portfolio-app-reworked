@@ -1,5 +1,5 @@
 .button {
-  @apply flex items-center gap-2;
+  @apply relative z-20 flex items-center gap-2;
 
   > .text {
     @apply text-xl;

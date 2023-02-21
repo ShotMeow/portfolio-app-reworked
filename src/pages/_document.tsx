@@ -6,11 +6,6 @@ const Document: NextPage<DocumentType> = () => {
   return (
     <Html lang="ru">
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&display=swap"
-          rel="preload"
-          as="style"
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -21,7 +16,6 @@ const Document: NextPage<DocumentType> = () => {
       <body>
         <Main />
         <NextScript />
-        <div id="overlay"></div>
       </body>
     </Html>
   );

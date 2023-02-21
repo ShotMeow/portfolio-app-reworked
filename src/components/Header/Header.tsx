@@ -25,9 +25,9 @@ const ThemeSwitcher = dynamic(
 const Header: FC = () => {
   return (
     <header className={styles.header}>
-      <h1>
+      <h2>
         <Link href="/">Данила Маврин</Link>
-      </h1>
+      </h2>
       <div className={styles.other}>
         <nav className={styles.navigation}>
           <ul>

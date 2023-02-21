@@ -1,0 +1,41 @@
+.main {
+  @apply my-6;
+  .landing {
+    @apply mt-40 grid items-center justify-items-center;
+    grid-template-columns: repeat(2, 1fr);
+    .text {
+      h1 {
+        @apply text-5xl font-black leading-tight;
+
+        > span {
+          @apply bg-gradient-to-r from-blue via-red to-orange;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .info {
+        @apply text-2xl font-bold mt-4;
+      }
+
+      .stack {
+        @apply mt-10;
+      }
+    }
+
+    .picture {
+      @apply relative;
+
+      svg {
+        @apply absolute bottom-0 left-0;
+      }
+
+      .swiper {
+        width: 400px;
+        .slide {
+          @apply rounded-lg shadow-lg;
+        }
+      }
+    }
+  }
+}
