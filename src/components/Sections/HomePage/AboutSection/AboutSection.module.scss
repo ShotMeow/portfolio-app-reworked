@@ -1,16 +1,18 @@
 .about {
-  @apply my-40 snap-start;
+  @apply my-40;
+
   .heading {
     @apply relative flex flex-col items-center;
-    > b {
-      @apply text-6xl font-black absolute text-white/10 blur-sm font-black -bottom-6 uppercase;
+
+    b {
+      @apply text-6xl absolute blur-sm font-black -bottom-6 uppercase;
 
       @media (max-width: 1279px) {
         @apply hidden;
       }
     }
 
-    > h3 {
+    h3 {
       @apply text-5xl font-black;
 
       @media (max-width: 639px) {
@@ -29,6 +31,7 @@
 
     .navigation {
       @apply w-full;
+
       ul {
         @apply flex flex-col gap-4;
 
@@ -38,13 +41,6 @@
 
         @media (max-width: 639px) {
           @apply flex-col items-center gap-4;
-        }
-
-        > li {
-          @apply text-white/30;
-          &.active {
-            @apply text-white;
-          }
         }
       }
     }

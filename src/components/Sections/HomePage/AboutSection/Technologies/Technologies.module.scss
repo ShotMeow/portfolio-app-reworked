@@ -2,7 +2,7 @@
   @apply space-y-6;
 
   .item {
-    @apply rounded-lg p-6 flex flex-col;
+    @apply rounded-lg p-6 flex flex-col shadow-lg;
     background: linear-gradient(96.81deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.014) 100%);
     backdrop-filter: blur(7.5px);
 

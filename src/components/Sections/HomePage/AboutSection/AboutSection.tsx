@@ -12,68 +12,42 @@ const AboutSection: FC = () => {
 
   return (
     <motion.section className={styles.about}>
-      <motion.div className={styles.heading}>
-        {step === 1 && (
-          <motion.b
-            initial={{ translateY: "20px", opacity: 0 }}
-            whileInView={{ translateY: "0px", opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            Обо мне
-          </motion.b>
-        )}
-        {step === 2 && (
-          <motion.b
-            initial={{ translateY: "20px", opacity: 0 }}
-            whileInView={{ translateY: "0px", opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            Опыт работы
-          </motion.b>
-        )}
-        {step === 3 && (
-          <motion.b
-            initial={{ translateY: "20px", opacity: 0 }}
-            whileInView={{ translateY: "0px", opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            Технологии
-          </motion.b>
-        )}
-        {step === 1 && (
-          <motion.h3
-            initial={{ translateY: "20px", opacity: 0 }}
-            whileInView={{ translateY: "0px", opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            Обо мне
-          </motion.h3>
-        )}
-        {step === 2 && (
-          <motion.h3
-            initial={{ translateY: "20px", opacity: 0 }}
-            whileInView={{ translateY: "0px", opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            Опыт работы
-          </motion.h3>
-        )}
-        {step === 3 && (
-          <motion.h3
-            initial={{ translateY: "20px", opacity: 0 }}
-            whileInView={{ translateY: "0px", opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            Технологии
-          </motion.h3>
-        )}
-      </motion.div>
+      {step === 1 && (
+        <motion.div
+          initial={{ translateY: "20px", opacity: 0 }}
+          whileInView={{ translateY: "0px", opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 100 }}
+          className={styles.heading}
+        >
+          <b className="text-black/30 dark:text-white/10">Обо мне</b>
+          <h3>Обо мне</h3>
+        </motion.div>
+      )}
+      {step === 2 && (
+        <motion.div
+          initial={{ translateY: "20px", opacity: 0 }}
+          whileInView={{ translateY: "0px", opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 100 }}
+          className={styles.heading}
+        >
+          <b className="text-black/30 dark:text-white/10">Опыт работы</b>
+          <h3>Опыт работы</h3>
+        </motion.div>
+      )}
+      {step === 3 && (
+        <motion.div
+          initial={{ translateY: "20px", opacity: 0 }}
+          whileInView={{ translateY: "0px", opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 100 }}
+          className={styles.heading}
+        >
+          <b className="text-black/30 dark:text-white/10">Технологии</b>
+          <h3>Технологии</h3>
+        </motion.div>
+      )}
       <div className={styles.main}>
         <motion.aside
           className={styles.navigation}
@@ -82,24 +56,27 @@ const AboutSection: FC = () => {
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 100 }}
         >
-          <ul>
+          <ul className="dark:text-white/30">
             <li
               className={classNames({
-                [styles.active]: step === 1,
+                "dark:text-white text-black": step === 1,
+                "dark:text-white/30 text-gray-light": step !== 1,
               })}
             >
               <button onClick={() => setStep(1)}>/01 Обо мне</button>
             </li>
             <li
               className={classNames({
-                [styles.active]: step === 2,
+                "dark:text-white text-black": step === 2,
+                "dark:text-white/30 text-gray-light": step !== 2,
               })}
             >
               <button onClick={() => setStep(2)}>/02 Опыт работы</button>
             </li>
             <li
               className={classNames({
-                [styles.active]: step === 3,
+                "dark:text-white text-black": step === 3,
+                "dark:text-white/30 text-gray-light": step !== 3,
               })}
             >
               <button onClick={() => setStep(3)}>/03 Технологии</button>

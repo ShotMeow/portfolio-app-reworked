@@ -8,7 +8,7 @@
   }
 
   .text {
-    @apply space-y-6 mt-10 text-white text-xl;
+    @apply space-y-6 mt-10 dark:text-white text-xl;
 
     .traits {
       @apply text-gray-light text-lg;
