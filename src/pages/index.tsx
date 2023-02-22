@@ -1,22 +1,18 @@
 import React from "react";
 import { NextPage } from "next";
-import Layout from "@/components/Layout/Layout";
+import Layout from "@/components/layouts/Layout";
 import Head from "next/head";
-import LandingSection from "@/components/Sections/HomePage/LandingSection/LandingSection";
-import AboutSection from "@/components/Sections/HomePage/AboutSection/AboutSection";
+import HomePage from "@/components/templates/HomePage/HomePage";
 
-const HomePage: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
         <title>Данила Маврин</title>
       </Head>
-      <main>
-        <LandingSection />
-        <AboutSection />
-      </main>
+      <HomePage />
     </Layout>
   );
 };
 
-export default HomePage;
+export default Home;

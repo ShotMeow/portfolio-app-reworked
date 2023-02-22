@@ -1,0 +1,22 @@
+import React, { FC } from "react";
+import { TechnologyType } from "@/components/templates/HomePage/Sections/About/Technologies/Technologies.types";
+import { motion } from "framer-motion";
+import { heightAutoAnimation } from "@/animations/base.animations";
+interface Props {
+  items: TechnologyType[];
+}
+
+const TechnologiesList: FC<Props> = ({ items }) => {
+  return (
+    <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
+      {items.map((item) => (
+        <li key={item.heading}>
+          <h6 className="text-gray">{item.heading}</h6>
+          <h5 className="text-xl font-bold">{item.description}</h5>
+        </li>
+      ))}
+    </motion.ul>
+  );
+};
+
+export default TechnologiesList;

@@ -1,10 +1,9 @@
 import React, { FC, useRef, useState } from "react";
 import { useLocale } from "@/features/language/hooks";
 
-import styles from "./LanguageSwitcher.module.scss";
 import LanguageSwitcherButton from "@/features/language/components/LanguageSwitcherButton/LanguageSwitcherButton";
 import LanguageSwitcherMenu from "@/features/language/components/LanguageSwitcherMenu/LanguageSwitcherMenu";
-import Dropdown from "@/components/Dropdown/Dropdown";
+import Dropdown from "@/components/modules/Dropdown";
 import { AnimatePresence } from "framer-motion";
 
 const LanguageSwitcher: FC = () => {
@@ -13,7 +12,7 @@ const LanguageSwitcher: FC = () => {
   const targetRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className={styles.switcher}>
+    <div>
       <LanguageSwitcherButton
         onClick={(event) => {
           event.stopPropagation();

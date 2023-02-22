@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 
-import styles from "./LanguageSwitcherMenu.module.scss";
 import { Locale } from "@/features/language/types";
 import classNames from "classnames";
 
@@ -11,19 +10,15 @@ interface Props {
 
 const LanguageSwitcherMenu: FC<Props> = ({ locale, onChangeLocale }) => {
   return (
-    <ul
-      className={classNames(
-        {
-          [styles.menu]: true,
-        },
-        "dark:bg-black"
-      )}
-    >
+    <ul className="bg-white dark:bg-black rounded-lg shadow-lg">
       <li>
         <button
-          className={classNames({
-            [styles.active]: locale === Locale.RU,
-          })}
+          className={classNames(
+            {
+              "text-white bg-blue": locale === Locale.RU,
+            },
+            "px-10 py-3 hover:bg-blue hover:text-white rounded-t-lg"
+          )}
           onClick={() => onChangeLocale(Locale.RU)}
         >
           Русский
@@ -31,9 +26,12 @@ const LanguageSwitcherMenu: FC<Props> = ({ locale, onChangeLocale }) => {
       </li>
       <li>
         <button
-          className={classNames({
-            [styles.active]: locale === Locale.EN,
-          })}
+          className={classNames(
+            {
+              "text-white bg-blue": locale === Locale.EN,
+            },
+            "px-10 py-3 hover:bg-blue hover:text-white rounded-b-lg"
+          )}
           onClick={() => onChangeLocale(Locale.EN)}
         >
           English

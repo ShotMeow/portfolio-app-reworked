@@ -1,9 +1,9 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
-import styles from "./LanguageSwitcherButton.module.scss";
 import { Locale } from "@/features/language/types";
-import Arrow from "@/components/Icons/Arrow";
+import Arrow from "@/components/elements/Icons/Arrow";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
   shown: boolean;
@@ -13,22 +13,28 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
 const LanguageSwitcherButton = forwardRef<HTMLButtonElement, Props>(
   ({ shown, locale, ...props }, ref) => {
     return (
-      <button
-        className={classNames({
-          [styles.button]: true,
-          [styles.active]: shown,
-        })}
-        ref={ref}
-        {...props}
-      >
-        <span className={styles.text}>
-          {locale === Locale.EN && "ENG"}
-          {locale === Locale.RU && "RU"}
-        </span>
-        <span className={styles.icon}>
-          <Arrow />
-        </span>
-      </button>
+      <motion.div whileTap={{ scale: 0.95 }}>
+        <button
+          className="relative flex items-center gap-2"
+          ref={ref}
+          {...props}
+        >
+          <span className="text-xl absolute right-6">
+            {locale === Locale.EN && "ENG"}
+            {locale === Locale.RU && "RU"}
+          </span>
+          <span>
+            <Arrow
+              className={classNames(
+                {
+                  "rotate-180": shown,
+                },
+                "transition-transform"
+              )}
+            />
+          </span>
+        </button>
+      </motion.div>
     );
   }
 );

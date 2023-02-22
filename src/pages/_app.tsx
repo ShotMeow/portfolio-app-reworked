@@ -1,4 +1,4 @@
-import "@/styles/globals.scss";
+import "@/styles/globals.css";
 import { NextPage } from "next";
 import { AppProps } from "next/app";
 import NextProgressBar from "nextjs-progressbar";

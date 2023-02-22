@@ -1,11 +1,10 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
-import styles from "./ThemeSwitcherButton.module.scss";
 import { ColorScheme } from "@/features/theme/types";
-import Sun from "@/components/Icons/Sun";
-import Moon from "@/components/Icons/Moon";
-import Auto from "@/components/Icons/Auto";
-import classNames from "classnames";
+import Sun from "@/components/elements/Icons/Sun";
+import Moon from "@/components/elements/Icons/Moon";
+import Auto from "@/components/elements/Icons/Auto";
+import { motion } from "framer-motion";
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
   colorScheme: ColorScheme;
@@ -14,20 +13,17 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
 const ThemeSwitcherButton = forwardRef<HTMLButtonElement, Props>(
   ({ colorScheme, ...props }, ref) => {
     return (
-      <button
-        className={classNames(
-          {
-            [styles.button]: true,
-          },
-          "dark:bg-black"
-        )}
-        ref={ref}
-        {...props}
-      >
-        {colorScheme === ColorScheme.AUTO && <Auto />}
-        {colorScheme === ColorScheme.LIGHT && <Sun />}
-        {colorScheme === ColorScheme.DARK && <Moon />}
-      </button>
+      <motion.div whileTap={{ scale: 0.95 }}>
+        <button
+          className="bg-white dark:bg-black p-3 rounded-full shadow-custom"
+          ref={ref}
+          {...props}
+        >
+          {colorScheme === ColorScheme.AUTO && <Auto />}
+          {colorScheme === ColorScheme.LIGHT && <Sun />}
+          {colorScheme === ColorScheme.DARK && <Moon />}
+        </button>
+      </motion.div>
     );
   }
 );

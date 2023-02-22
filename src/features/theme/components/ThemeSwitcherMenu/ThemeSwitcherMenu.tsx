@@ -3,9 +3,9 @@ import React, { FC, HTMLAttributes } from "react";
 import styles from "./ThemeSwitcherMenu.module.scss";
 import { ColorScheme } from "@/features/theme/types";
 import classNames from "classnames";
-import Auto from "@/components/Icons/Auto";
-import Sun from "@/components/Icons/Sun";
-import Moon from "@/components/Icons/Moon";
+import Auto from "@/components/elements/Icons/Auto";
+import Sun from "@/components/elements/Icons/Sun";
+import Moon from "@/components/elements/Icons/Moon";
 
 interface Props extends HTMLAttributes<HTMLUListElement> {
   colorScheme: ColorScheme;

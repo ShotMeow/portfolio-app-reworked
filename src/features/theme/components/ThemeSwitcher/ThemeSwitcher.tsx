@@ -1,13 +1,12 @@
 import React, { FC, useRef, useState } from "react";
 
-import styles from "./ThemeSwitcher.module.scss";
 import ThemeSwitcherButton from "@/features/theme/components/ThemeSwitcherButton/ThemeSwitcherButton";
 import ThemeSwitcherMenu from "@/features/theme/components/ThemeSwitcherMenu/ThemeSwitcherMenu";
 import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
 import { useColorScheme } from "@/features/theme/hooks";
 
-const Dropdown = dynamic(import("@/components/Dropdown/Dropdown"), {
+const Dropdown = dynamic(import("@/components/modules/Dropdown"), {
   ssr: false,
 });
 
@@ -17,7 +16,7 @@ const ThemeSwitcher: FC = () => {
   const targetRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className={styles.switcher}>
+    <div>
       <ThemeSwitcherButton
         onClick={(event) => {
           event.stopPropagation();

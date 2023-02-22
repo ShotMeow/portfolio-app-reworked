@@ -1,20 +1,11 @@
 import React, { FC } from "react";
 
-import styles from "./ThemeSwitcherButton.module.scss";
-import classNames from "classnames";
-import Moon from "@/components/Icons/Moon";
+import Auto from "@/components/elements/Icons/Auto";
 
 const ThemeSwitcherButtonSkeleton: FC = () => {
   return (
-    <div
-      className={classNames(
-        {
-          [styles.skeleton]: true,
-        },
-        "dark:bg-black"
-      )}
-    >
-      <Moon />
+    <div className="bg-white w-10 h-10 rounded-full dark:bg-black shadow-2xl p-3">
+      <Auto />
     </div>
   );
 };
