@@ -12,10 +12,6 @@ body {
   @apply transition-all text-black dark:text-white font-jetbrains overflow-x-hidden bg-white from-blue-dark to-blue-light bg-fixed dark:bg-gradient-to-t;
 }
 
-main {
-  @apply flex flex-col gap-40;
-}
-
 *::-webkit-scrollbar {
   width: 4px;
 }
