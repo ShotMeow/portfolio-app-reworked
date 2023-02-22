@@ -17,7 +17,6 @@ const AboutSection: FC = () => {
           initial={{ translateY: "20px", opacity: 0 }}
           whileInView={{ translateY: "0px", opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: "spring", stiffness: 100 }}
           className={styles.heading}
         >
           <b className="text-black/30 dark:text-white/10">Обо мне</b>
@@ -29,7 +28,6 @@ const AboutSection: FC = () => {
           initial={{ translateY: "20px", opacity: 0 }}
           whileInView={{ translateY: "0px", opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: "spring", stiffness: 100 }}
           className={styles.heading}
         >
           <b className="text-black/30 dark:text-white/10">Опыт работы</b>
@@ -41,7 +39,6 @@ const AboutSection: FC = () => {
           initial={{ translateY: "20px", opacity: 0 }}
           whileInView={{ translateY: "0px", opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: "spring", stiffness: 100 }}
           className={styles.heading}
         >
           <b className="text-black/30 dark:text-white/10">Технологии</b>
@@ -54,7 +51,6 @@ const AboutSection: FC = () => {
           initial={{ translateX: "-200px", opacity: 0 }}
           whileInView={{ translateX: "0px", opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: "spring", stiffness: 100 }}
         >
           <ul className="dark:text-white/30">
             <li
@@ -87,7 +83,6 @@ const AboutSection: FC = () => {
           initial={{ translateX: "200px", opacity: 0 }}
           whileInView={{ translateX: "0px", opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: "spring", stiffness: 100 }}
         >
           {step === 1 && <AboutMe />}
           {step === 2 && <WorkExperience />}

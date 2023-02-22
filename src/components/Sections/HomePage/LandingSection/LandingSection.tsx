@@ -18,7 +18,6 @@ const LandingSection: FC = () => {
       className={styles.landing}
       initial={{ translateX: "-200px", opacity: 0 }}
       animate={{ translateX: "0px", opacity: 1 }}
-      transition={{ type: "spring", stiffness: 100 }}
     >
       <div className={styles.text}>
         <h1>
