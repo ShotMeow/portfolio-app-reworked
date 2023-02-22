@@ -1,8 +1,8 @@
-.button {
+.button, .skeleton {
   @apply relative z-20 flex items-center gap-2;
 
   > .text {
-    @apply text-xl;
+    @apply text-xl absolute right-6;
   }
 
   > .icon {

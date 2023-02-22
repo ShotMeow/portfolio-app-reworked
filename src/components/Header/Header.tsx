@@ -8,11 +8,14 @@ import Telegram from "@/components/Icons/Telegram";
 import Vkontakte from "@/components/Icons/Vkontakte";
 import Behance from "@/components/Icons/Behance";
 import Menu from "@/components/Icons/Menu";
+import ThemeSwitcherButtonSkeleton from "@/features/theme/components/ThemeSwitcherButton/ThemeSwitcherButtonSkeleton";
+import LanguageSwitcherButtonSkeleton from "@/features/language/components/LanguageSwitcherButton/LanguageSwitcherButtonSkeleton";
 
 const LanguageSwitcher = dynamic(
   import("@/features/language/components/LanguageSwitcher/LanguageSwitcher"),
   {
     ssr: false,
+    loading: () => <LanguageSwitcherButtonSkeleton />,
   }
 );
 
@@ -20,6 +23,7 @@ const ThemeSwitcher = dynamic(
   import("@/features/theme/components/ThemeSwitcher/ThemeSwitcher"),
   {
     ssr: false,
+    loading: () => <ThemeSwitcherButtonSkeleton />,
   }
 );
 

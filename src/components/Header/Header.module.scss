@@ -6,10 +6,10 @@
   }
 
   > .other {
-    @apply flex items-center gap-14;
+    @apply flex items-center gap-16;
 
     > .navigation > ul {
-      @apply flex items-center gap-6;
+      @apply flex items-center gap-6 mr-10;
     }
 
     .switchers {
