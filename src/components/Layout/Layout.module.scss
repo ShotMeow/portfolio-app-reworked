@@ -1,12 +1,8 @@
 .layout {
-  @apply h-full bg-white from-blue-dark to-blue-light bg-cover;
+  @apply bg-fixed h-screen overflow-y-scroll overflow-x-hidden;
+  background-image: url("../../assets/noise.svg");
 
-  > .noise {
-    @apply h-full;
-    background-image: url("../../assets/noise.svg");
-
-    > div {
-      @apply container mx-auto;
-    }
+  > div {
+    @apply container mx-auto;
   }
 }

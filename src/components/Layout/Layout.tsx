@@ -7,18 +7,13 @@ import classNames from "classnames";
 const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div
-      className={classNames(
-        {
-          [styles.layout]: true,
-        },
-        "dark:bg-gradient-to-t"
-      )}
+      className={classNames({
+        [styles.layout]: true,
+      })}
     >
-      <div className={styles.noise}>
-        <div>
-          <Header />
-          {children}
-        </div>
+      <div>
+        <Header />
+        {children}
       </div>
     </div>
   );

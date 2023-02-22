@@ -13,7 +13,7 @@ const Document: NextPage<DocumentType> = () => {
           crossOrigin={"anonymous"}
         />
       </Head>
-      <body>
+      <body className="dark:bg-gradient-to-t">
         <Main />
         <NextScript />
       </body>

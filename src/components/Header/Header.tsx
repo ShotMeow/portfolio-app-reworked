@@ -10,6 +10,7 @@ import Behance from "@/components/Icons/Behance";
 import Menu from "@/components/Icons/Menu";
 import ThemeSwitcherButtonSkeleton from "@/features/theme/components/ThemeSwitcherButton/ThemeSwitcherButtonSkeleton";
 import LanguageSwitcherButtonSkeleton from "@/features/language/components/LanguageSwitcherButton/LanguageSwitcherButtonSkeleton";
+import { motion } from "framer-motion";
 
 const LanguageSwitcher = dynamic(
   import("@/features/language/components/LanguageSwitcher/LanguageSwitcher"),
@@ -29,7 +30,11 @@ const ThemeSwitcher = dynamic(
 
 const Header: FC = () => {
   return (
-    <header className={styles.header}>
+    <motion.header
+      className={styles.header}
+      initial={{ translateY: "-200px", opacity: 0 }}
+      animate={{ translateY: "0px", opacity: 1 }}
+    >
       <h2>
         <Link href="/">Данила Маврин</Link>
       </h2>
@@ -76,7 +81,7 @@ const Header: FC = () => {
           <Menu />
         </button>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

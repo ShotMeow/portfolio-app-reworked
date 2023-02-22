@@ -1,0 +1,36 @@
+.technologies {
+  @apply space-y-6;
+
+  .item {
+    @apply rounded-lg p-6 flex flex-col;
+    background: linear-gradient(96.81deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.014) 100%);
+    backdrop-filter: blur(7.5px);
+
+    button {
+      @apply text-2xl flex items-center justify-between text-start;
+
+      svg {
+        @apply transition-transform;
+      }
+
+      &.active {
+        svg {
+          @apply rotate-180;
+        }
+      }
+    }
+
+    ul {
+      @apply space-y-4;
+      li {
+        h6 {
+          @apply text-gray-light;
+        }
+
+        h5 {
+          @apply text-xl;
+        }
+      }
+    }
+  }
+}

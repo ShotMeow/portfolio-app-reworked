@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       fontSize: {
         "5xl": "60px",
+        "6xl": "128px",
       },
       colors: {
         gray: "#646970",
+        "gray-light": "#878787",
         blue: "#3B82F6",
         "blue-dark": "#121824",
         "blue-light": "#212934",

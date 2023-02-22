@@ -1,5 +1,5 @@
 .header {
-  @apply relative z-50 flex items-center justify-between pt-6;
+  @apply relative z-50 flex items-center justify-between pt-6 snap-start;
 
   > h2 {
     @apply text-3xl font-bold;
