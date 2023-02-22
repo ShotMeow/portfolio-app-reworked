@@ -2,12 +2,9 @@ import "@/styles/globals.scss";
 import { NextPage } from "next";
 import { AppProps } from "next/app";
 import NextProgressBar from "nextjs-progressbar";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 
-dynamic(import("@/features/theme/initColorScheme").then, {
-  ssr: false,
-});
+import("@/features/theme/initColorScheme");
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
