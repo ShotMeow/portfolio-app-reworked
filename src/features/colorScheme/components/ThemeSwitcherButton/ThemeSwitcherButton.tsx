@@ -1,6 +1,6 @@
 import React, { forwardRef, HTMLAttributes } from "react";
 
-import { ColorScheme } from "@/features/theme/types";
+import { ColorScheme } from "@/features/colorScheme/types";
 import Sun from "@/components/elements/Icons/Sun";
 import Moon from "@/components/elements/Icons/Moon";
 import Auto from "@/components/elements/Icons/Auto";

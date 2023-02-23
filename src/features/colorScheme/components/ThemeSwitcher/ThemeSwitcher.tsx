@@ -1,10 +1,10 @@
 import React, { FC, useRef, useState } from "react";
 
-import ThemeSwitcherButton from "@/features/theme/components/ThemeSwitcherButton/ThemeSwitcherButton";
-import ThemeSwitcherMenu from "@/features/theme/components/ThemeSwitcherMenu/ThemeSwitcherMenu";
+import ThemeSwitcherButton from "@/features/colorScheme/components/ThemeSwitcherButton/ThemeSwitcherButton";
+import ThemeSwitcherMenu from "@/features/colorScheme/components/ThemeSwitcherMenu/ThemeSwitcherMenu";
 import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
-import { useColorScheme } from "@/features/theme/hooks";
+import { useColorScheme } from "@/features/colorScheme/hooks";
 
 const Dropdown = dynamic(import("@/components/modules/Dropdown"), {
   ssr: false,

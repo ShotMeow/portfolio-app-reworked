@@ -3,9 +3,9 @@ import {
   getSavedScheme,
   getSystemScheme,
   removeSavedScheme,
-} from "@/features/theme/utils";
+} from "@/features/colorScheme/utils";
 import { Dispatch, useEffect, useState } from "react";
-import { ColorScheme } from "@/features/theme/types";
+import { ColorScheme } from "@/features/colorScheme/types";
 
 const matchMedia = window.matchMedia("(prefers-color-scheme:dark)");
 

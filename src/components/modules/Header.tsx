@@ -9,7 +9,7 @@ import Vkontakte from "@/components/elements/Icons/Vkontakte";
 import Behance from "@/components/elements/Icons/Behance";
 import Menu from "@/components/elements/Icons/Menu";
 
-import ThemeSwitcherButtonSkeleton from "@/features/theme/components/ThemeSwitcherButton/ThemeSwitcherButtonSkeleton";
+import ThemeSwitcherButtonSkeleton from "@/features/colorScheme/components/ThemeSwitcherButton/ThemeSwitcherButtonSkeleton";
 import LanguageSwitcherButtonSkeleton from "@/features/language/components/LanguageSwitcherButton/LanguageSwitcherButtonSkeleton";
 import { fromTopAnimation } from "@/animations/base.animations";
 
@@ -22,7 +22,7 @@ const LanguageSwitcher = dynamic(
 );
 
 const ThemeSwitcher = dynamic(
-  import("@/features/theme/components/ThemeSwitcher/ThemeSwitcher"),
+  import("@/features/colorScheme/components/ThemeSwitcher/ThemeSwitcher"),
   {
     ssr: false,
     loading: () => <ThemeSwitcherButtonSkeleton />,

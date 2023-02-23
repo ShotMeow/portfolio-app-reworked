@@ -4,9 +4,9 @@ import { EffectCards } from "swiper";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import myPhoto from "@/assets/me.jpg";
-import myPhotoTwo from "@/assets/me_2.jpg";
-import myPhotoThree from "@/assets/me_3.jpg";
+import swiperSlideImageFirst from "./images/swiperSlideImageFirst.webp";
+import swiperSlideImageSecond from "./images/swiperSlideImageSecond.webp";
+import swiperSlideImageThird from "./images/swiperSlideImageThird.webp";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -44,11 +44,16 @@ const Landing: FC = () => {
           className="w-48 md:w-96"
         >
           <SwiperSlide className="rounded-lg shadow-custom">
-            <Image src={myPhoto} alt="Моё фото" width={400} priority />
+            <Image
+              src={swiperSlideImageFirst}
+              alt="Моё фото"
+              width={400}
+              priority
+            />
           </SwiperSlide>
           <SwiperSlide className="rounded-lg shadow-custom">
             <Image
-              src={myPhotoTwo}
+              src={swiperSlideImageSecond}
               alt="Моё второе фото"
               width={400}
               priority
@@ -56,7 +61,7 @@ const Landing: FC = () => {
           </SwiperSlide>
           <SwiperSlide className="rounded-lg shadow-custom">
             <Image
-              src={myPhotoThree}
+              src={swiperSlideImageThird}
               alt="Моё третье фото"
               width={400}
               priority

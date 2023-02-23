@@ -1,4 +1,4 @@
-import { ColorScheme } from "@/features/theme/types";
+import { ColorScheme } from "@/features/colorScheme/types";
 
 const LS_COLOR_SCHEME_KEY = "portoflio:scheme";
 

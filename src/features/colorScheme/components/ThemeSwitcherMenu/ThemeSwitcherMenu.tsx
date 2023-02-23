@@ -1,7 +1,7 @@
 import React, { FC, HTMLAttributes } from "react";
 
 import styles from "./ThemeSwitcherMenu.module.scss";
-import { ColorScheme } from "@/features/theme/types";
+import { ColorScheme } from "@/features/colorScheme/types";
 import classNames from "classnames";
 import Auto from "@/components/elements/Icons/Auto";
 import Sun from "@/components/elements/Icons/Sun";
