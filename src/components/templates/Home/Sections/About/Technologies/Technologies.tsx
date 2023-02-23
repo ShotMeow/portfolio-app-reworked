@@ -1,13 +1,13 @@
 import React, { FC, useState } from "react";
 import Arrow from "@/components/elements/Icons/Arrow";
-import { TechnologiesEnum } from "@/components/templates/HomePage/Sections/About/Technologies/Technologies.types";
+import { TechnologiesEnum } from "@/components/templates/Home/Sections/About/Technologies/Technologies.types";
 import classNames from "classnames";
-import TechnologiesList from "@/components/templates/HomePage/Sections/About/Technologies/TechnologiesList/TechnologiesList";
+import TechnologiesList from "@/components/templates/Home/Sections/About/Technologies/TechnologiesList/TechnologiesList";
 import {
   backendData,
   designData,
   frontendData,
-} from "@/components/templates/HomePage/Sections/About/Technologies/Technologies.data";
+} from "@/components/templates/Home/Sections/About/Technologies/Technologies.data";
 import { AnimatePresence, motion } from "framer-motion";
 import { inViewFromBottomAnimation } from "@/animations/inView.animations";
 

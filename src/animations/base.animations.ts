@@ -45,7 +45,7 @@ export const fromBottomAnimation = {
     opacity: 0,
   },
   animate: {
-    translateX: 0,
+    translateY: 0,
     opacity: 1,
   },
   transition: springTransition,
@@ -67,5 +67,20 @@ export const heightAutoAnimation = {
   style: {
     overflow: "hidden",
     marginTop: 24,
+  },
+};
+
+export const fromTopAndExit = {
+  initial: {
+    translateY: -200,
+    opacity: 0,
+  },
+  animate: {
+    translateY: 0,
+    opacity: 1,
+  },
+  exit: {
+    translateY: -200,
+    opacity: 0,
   },
 };

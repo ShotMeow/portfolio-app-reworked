@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { TechnologyType } from "@/components/templates/HomePage/Sections/About/Technologies/Technologies.types";
+import { TechnologyType } from "@/components/templates/Home/Sections/About/Technologies/Technologies.types";
 import { motion } from "framer-motion";
 import { heightAutoAnimation } from "@/animations/base.animations";
 interface Props {

@@ -1,4 +1,4 @@
-import { TechnologyType } from "@/components/templates/HomePage/Sections/About/Technologies/Technologies.types";
+import { TechnologyType } from "@/components/templates/Home/Sections/About/Technologies/Technologies.types";
 
 export const frontendData: TechnologyType[] = [
   {

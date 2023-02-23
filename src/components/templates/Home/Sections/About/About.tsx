@@ -1,8 +1,8 @@
 import React, { FC, useState } from "react";
 import classNames from "classnames";
-import AboutMe from "@/components/templates/HomePage/Sections/About/AboutMe/AboutMe";
-import Experience from "@/components/templates/HomePage/Sections/About/Experience/Experience";
-import Technologies from "@/components/templates/HomePage/Sections/About/Technologies/Technologies";
+import AboutMe from "@/components/templates/Home/Sections/About/AboutMe/AboutMe";
+import Experience from "@/components/templates/Home/Sections/About/Experience/Experience";
+import Technologies from "@/components/templates/Home/Sections/About/Technologies/Technologies";
 import Heading from "@/components/elements/Heading";
 import { motion } from "framer-motion";
 import { inViewFromLeftAnimation } from "@/animations/inView.animations";
@@ -15,7 +15,7 @@ const About: FC = () => {
       {step === 1 && <Heading>Обо мне</Heading>}
       {step === 2 && <Heading>Опыт работы</Heading>}
       {step === 3 && <Heading>Технологии</Heading>}
-      <div className="flex flex-col items-center md:flex-row md:items-start gap-20 py-24">
+      <div className="flex flex-col items-center md:flex-row md:items-start gap-20 my-10 md:my-24">
         <motion.aside className="shrink-0" {...inViewFromLeftAnimation}>
           <ul className="flex items-center gap-6 flex-col sm:flex-row md:flex-col md:items-start">
             <li>

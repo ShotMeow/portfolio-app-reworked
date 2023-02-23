@@ -2,9 +2,9 @@ import React from "react";
 import { NextPage } from "next";
 import Layout from "@/components/layouts/Layout";
 import Head from "next/head";
-import HomePage from "@/components/templates/HomePage/HomePage";
+import Home from "@/components/templates/Home/Home";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <Layout>
       <Head>
@@ -14,9 +14,9 @@ const Home: NextPage = () => {
           content="Посадочная страница сайта-портфолио"
         />
       </Head>
-      <HomePage />
+      <Home />
     </Layout>
   );
 };
 
-export default Home;
+export default HomePage;

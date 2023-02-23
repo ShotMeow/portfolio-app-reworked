@@ -5,7 +5,7 @@ import Arrow from "@/components/elements/Icons/Arrow";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 
-interface Props extends HTMLAttributes<HTMLButtonElement> {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   shown: boolean;
   locale: Locale;
 }
@@ -13,12 +13,12 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
 const LanguageSwitcherButton = forwardRef<HTMLButtonElement, Props>(
   ({ shown, locale, ...props }, ref) => {
     return (
-      <motion.div whileTap={{ scale: 0.95 }}>
-        <button
+      <div {...props}>
+        <motion.button
           className="relative flex items-center gap-2"
-          ref={ref}
+          whileTap={{ scale: 0.95 }}
           aria-label="Переключатель языка сайта"
-          {...props}
+          ref={ref}
         >
           <span className="text-xl absolute right-6">
             {locale === Locale.EN && "ENG"}
@@ -34,8 +34,8 @@ const LanguageSwitcherButton = forwardRef<HTMLButtonElement, Props>(
               )}
             />
           </span>
-        </button>
-      </motion.div>
+        </motion.button>
+      </div>
     );
   }
 );

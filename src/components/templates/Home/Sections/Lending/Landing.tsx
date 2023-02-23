@@ -18,7 +18,7 @@ import {
 
 const Landing: FC = () => {
   return (
-    <section className="grid items-center lg:grid-cols-2 my-40 gap-10">
+    <section className="grid items-center lg:grid-cols-2 my-20 lg:my-40 gap-10">
       <motion.div {...fromLeftAnimation}>
         <h1 className="text-5xl md:text-6xl font-black">
           Full-stack{" "}
