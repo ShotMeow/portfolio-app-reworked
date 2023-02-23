@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -60,7 +60,10 @@ const Header: FC = () => {
             className="transition-transform hover:scale-105"
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="https://github.com/ShotMeow">
+            <Link
+              href="https://github.com/ShotMeow"
+              aria-label="Ссылка на GitHub"
+            >
               <GitHub />
             </Link>
           </motion.li>
@@ -68,7 +71,10 @@ const Header: FC = () => {
             className="transition-transform hover:scale-105"
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="https://t.me/shotmeow">
+            <Link
+              href="https://t.me/sexy_shotmeow"
+              aria-label="Ссылка на Telegram"
+            >
               <Telegram />
             </Link>
           </motion.li>
@@ -76,7 +82,7 @@ const Header: FC = () => {
             className="transition-transform hover:scale-105"
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="https://vk.com/shotmeow">
+            <Link href="https://vk.com/sexy_shotmeow" aria-label="Ссылка на VK">
               <Vkontakte />
             </Link>
           </motion.li>
@@ -84,7 +90,10 @@ const Header: FC = () => {
             className="transition-transform hover:scale-105"
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="https://www.behance.net/shotmeow">
+            <Link
+              href="https://www.behance.net/shotmeow"
+              aria-label="Ссылка на Behance"
+            >
               <Behance />
             </Link>
           </motion.li>

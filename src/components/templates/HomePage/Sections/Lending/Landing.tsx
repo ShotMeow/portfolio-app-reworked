@@ -27,10 +27,10 @@ const Landing: FC = () => {
           </span>{" "}
           Developer
         </h1>
-        <p className="text-2xl font-bold mt-4">
+        <h2 className="text-2xl font-bold mt-4">
           Front-end Developer из А-БТ. Веду свой блог и помогаю другим
           разработчикам становиться сильнее.
-        </p>
+        </h2>
         <p className="mt-10">
           React, Next, TypeScript, SASS, CSS Modules, Vite, Tailwind, Redux,
           Node, Nest, Postgres, TypeORM, Git, Prettier, ESLint, Figma

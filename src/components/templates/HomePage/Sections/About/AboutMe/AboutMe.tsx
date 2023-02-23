@@ -10,8 +10,8 @@ const AboutMe: FC = () => {
   return (
     <div className="w-full">
       <motion.div {...inViewFromTopAnimation}>
-        <h4 className="text-2xl font-bold">Маврин Данила Андреевич</h4>
-        <h5 className="text-sm text-gray">Full-stack JavaScript Developer</h5>
+        <h5 className="text-2xl font-bold">Маврин Данила Андреевич</h5>
+        <h6 className="text-sm text-gray">Full-stack JavaScript Developer</h6>
       </motion.div>
       <motion.div {...inViewFromRightAnimation}>
         <p className="mt-6 text-xl">

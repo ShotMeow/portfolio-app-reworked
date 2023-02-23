@@ -9,6 +9,10 @@ const Home: NextPage = () => {
     <Layout>
       <Head>
         <title>Данила Маврин</title>
+        <meta
+          name="description"
+          content="Посадочная страница сайта-портфолио"
+        />
       </Head>
       <HomePage />
     </Layout>

@@ -17,6 +17,7 @@ const LanguageSwitcherButton = forwardRef<HTMLButtonElement, Props>(
         <button
           className="relative flex items-center gap-2"
           ref={ref}
+          aria-label="Переключатель языка сайта"
           {...props}
         >
           <span className="text-xl absolute right-6">

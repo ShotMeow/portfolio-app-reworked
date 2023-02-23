@@ -1,11 +1,11 @@
 import "@/styles/globals.css";
+import("@/features/colorScheme/initColorScheme");
+
 import { NextPage } from "next";
 import { AppProps } from "next/app";
 import NextProgressBar from "nextjs-progressbar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
-
-import("@/features/colorScheme/initColorScheme");
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (

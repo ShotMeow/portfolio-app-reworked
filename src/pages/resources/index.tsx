@@ -8,6 +8,10 @@ const ResourcesPage: NextPage = () => {
     <Layout>
       <Head>
         <title>Данила Маврин - Ресурсы</title>
+        <meta
+          name="description"
+          content="Страница с полезными ресурсами для разработчиков"
+        />
       </Head>
     </Layout>
   );

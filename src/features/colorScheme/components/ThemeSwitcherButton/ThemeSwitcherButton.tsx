@@ -17,6 +17,7 @@ const ThemeSwitcherButton = forwardRef<HTMLButtonElement, Props>(
         <button
           className="bg-white dark:bg-black p-3 rounded-full shadow-custom"
           ref={ref}
+          aria-label="Переключатель цветовой схемы сайта"
           {...props}
         >
           {colorScheme === ColorScheme.AUTO && <Auto />}

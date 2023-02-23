@@ -12,7 +12,7 @@ const TechnologiesList: FC<Props> = ({ items }) => {
       {items.map((item) => (
         <li key={item.heading}>
           <h6 className="text-gray">{item.heading}</h6>
-          <h5 className="text-xl font-bold">{item.description}</h5>
+          <p className="text-xl font-bold">{item.description}</p>
         </li>
       ))}
     </motion.ul>

@@ -11,11 +11,11 @@ const Experience: FC = () => {
         {...inViewFromBottomAnimation}
       >
         <div className="backdrop-blur-xl bg-white/5 w-full h-32 lg:w-60 lg:h-60 rounded-lg shrink-0 flex items-center justify-center shadow-custom">
-          <h4 className="text-2xl font-black uppercase">Pictus</h4>
+          <p className="text-3xl font-black uppercase">Pictus</p>
         </div>
         <div>
-          <h3 className="text-2xl font-black">Pictus Media</h3>
-          <h5 className="text-gray text-sm">Агентство интернет-маркетинга</h5>
+          <h5 className="text-2xl font-black">Pictus Media</h5>
+          <h6 className="text-gray text-sm">Агентство интернет-маркетинга</h6>
           <div className="flex items-start flex-col sm:items-center sm:flex-row gap-2 sm:gap-6 mt-4">
             <h6>Стаж: 3 месяца</h6>
             <div className="h-1 w-1 bg-white rounded-full hidden sm:block" />
@@ -35,11 +35,11 @@ const Experience: FC = () => {
         {...inViewFromBottomAnimation}
       >
         <div className="backdrop-blur-xl bg-white/5 w-full h-32 lg:w-60 lg:h-60 rounded-lg shrink-0 flex items-center justify-center shadow-custom">
-          <h4 className="text-2xl font-black uppercase">Kodland</h4>
+          <p className="text-3xl font-black uppercase">Kodland</p>
         </div>
         <div>
-          <h3 className="text-2xl font-black">Kodland</h3>
-          <h5 className="text-gray text-sm">Онлайн-школа цифровых навыков</h5>
+          <h5 className="text-2xl font-black">Kodland</h5>
+          <h6 className="text-gray text-sm">Онлайн-школа цифровых навыков</h6>
           <div className="flex items-center gap-6 mt-4">
             <h6>Стаж: 1 год</h6>
             <div className="h-1 w-1 bg-white rounded-full" />
@@ -60,11 +60,11 @@ const Experience: FC = () => {
         {...inViewFromBottomAnimation}
       >
         <div className="backdrop-blur-xl bg-white/5 w-full h-32 lg:w-60 lg:h-60 rounded-lg shrink-0 flex items-center justify-center shadow-custom">
-          <h4 className="text-2xl font-black uppercase">А-БТ</h4>
+          <p className="text-3xl font-black uppercase">А-БТ</p>
         </div>
         <div>
-          <h3 className="text-2xl font-black">А-БТ</h3>
-          <h5 className="text-gray text-sm">IT-компания полного цикла</h5>
+          <h5 className="text-2xl font-black">А-БТ</h5>
+          <h6 className="text-gray text-sm">IT-компания полного цикла</h6>
           <div className="flex items-center gap-6 mt-4">
             <h6>Стаж: работаю в текущее время</h6>
             <div className="h-1 w-1 bg-white rounded-full" />

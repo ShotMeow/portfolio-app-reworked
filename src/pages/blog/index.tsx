@@ -8,6 +8,7 @@ const BlogPage: NextPage = () => {
     <Layout>
       <Head>
         <title>Данила Маврин - Блог</title>
+        <meta name="description" content="Страница с постами личного блога" />
       </Head>
     </Layout>
   );
