@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 
 import DesktopHeader from "@/components/modules/DesktopHeader";
 import MobileHeader from "@/components/modules/MobileHeader";
