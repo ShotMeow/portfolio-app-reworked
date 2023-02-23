@@ -26,9 +26,9 @@ const Technologies: FC = () => {
           className="flex items-center justify-between"
           onClick={() => setShownTechnology(TechnologiesEnum.FRONTEND)}
         >
-          <h5 className="text-xl font-bold text-start">
+          <p className="text-xl font-bold text-start">
             Front-end (Клиентская разработка)
-          </h5>
+          </p>
           <Arrow
             className={classNames(
               {
@@ -52,9 +52,9 @@ const Technologies: FC = () => {
           className="flex items-center justify-between"
           onClick={() => setShownTechnology(TechnologiesEnum.BACKEND)}
         >
-          <h5 className="text-xl font-bold text-start">
+          <p className="text-xl font-bold text-start">
             Back-end (Серверная разработка)
-          </h5>
+          </p>
           <Arrow
             className={classNames(
               {
@@ -78,7 +78,7 @@ const Technologies: FC = () => {
           className="flex items-center justify-between"
           onClick={() => setShownTechnology(TechnologiesEnum.DESIGN)}
         >
-          <h5 className="text-xl font-bold text-start">Design</h5>
+          <p className="text-xl font-bold text-start">Design</p>
           <Arrow
             className={classNames(
               {

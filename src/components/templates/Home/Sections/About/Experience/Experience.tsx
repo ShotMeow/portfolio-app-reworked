@@ -14,12 +14,12 @@ const Experience: FC = () => {
           <p className="text-3xl font-black uppercase">Pictus</p>
         </div>
         <div>
-          <h5 className="text-2xl font-black">Pictus Media</h5>
-          <h6 className="text-gray text-sm">Агентство интернет-маркетинга</h6>
+          <p className="text-2xl font-black">Pictus Media</p>
+          <p className="text-gray text-sm">Агентство интернет-маркетинга</p>
           <div className="flex items-start flex-col sm:items-center sm:flex-row gap-2 sm:gap-6 mt-4">
-            <h6>Стаж: 3 месяца</h6>
+            <p>Стаж: 3 месяца</p>
             <div className="h-1 w-1 bg-white rounded-full hidden sm:block" />
-            <h6>Позиция: Веб-дизайнер</h6>
+            <p>Позиция: Веб-дизайнер</p>
           </div>
           <p className="mt-6">
             Разрабатывал UI/UX дизайн для приложений клиентов компании. Я
@@ -38,12 +38,12 @@ const Experience: FC = () => {
           <p className="text-3xl font-black uppercase">Kodland</p>
         </div>
         <div>
-          <h5 className="text-2xl font-black">Kodland</h5>
-          <h6 className="text-gray text-sm">Онлайн-школа цифровых навыков</h6>
+          <p className="text-2xl font-black">Kodland</p>
+          <p className="text-gray text-sm">Онлайн-школа цифровых навыков</p>
           <div className="flex items-center gap-6 mt-4">
-            <h6>Стаж: 1 год</h6>
+            <p>Стаж: 1 год</p>
             <div className="h-1 w-1 bg-white rounded-full" />
-            <h6>Позиция: Преподаватель</h6>
+            <p>Позиция: Преподаватель</p>
           </div>
           <p className="mt-6">
             Преподавал уроки по направлениям “Веб-дизайн” и “Программирование на
@@ -63,12 +63,12 @@ const Experience: FC = () => {
           <p className="text-3xl font-black uppercase">А-БТ</p>
         </div>
         <div>
-          <h5 className="text-2xl font-black">А-БТ</h5>
-          <h6 className="text-gray text-sm">IT-компания полного цикла</h6>
+          <p className="text-2xl font-black">А-БТ</p>
+          <p className="text-gray text-sm">IT-компания полного цикла</p>
           <div className="flex items-center gap-6 mt-4">
-            <h6>Стаж: работаю в текущее время</h6>
+            <p>Стаж: работаю в текущее время</p>
             <div className="h-1 w-1 bg-white rounded-full" />
-            <h6>Позиция: Front-end Developer</h6>
+            <p>Позиция: Front-end Developer</p>
           </div>
           <p className="mt-6">
             Разработка интерфейсов для терминалов, поддержка интерфейсов,

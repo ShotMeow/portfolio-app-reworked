@@ -11,7 +11,7 @@ const TechnologiesList: FC<Props> = ({ items }) => {
     <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
       {items.map((item) => (
         <li key={item.heading}>
-          <h6 className="text-gray">{item.heading}</h6>
+          <p className="text-gray">{item.heading}</p>
           <p className="text-xl font-bold">{item.description}</p>
         </li>
       ))}

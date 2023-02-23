@@ -10,8 +10,8 @@ const AboutMe: FC = () => {
   return (
     <div className="w-full">
       <motion.div {...inViewFromTopAnimation}>
-        <h5 className="text-2xl font-bold">Маврин Данила Андреевич</h5>
-        <h6 className="text-sm text-gray">Full-stack JavaScript Developer</h6>
+        <p className="text-2xl font-bold">Маврин Данила Андреевич</p>
+        <p className="text-sm text-gray">Full-stack JavaScript Developer</p>
       </motion.div>
       <motion.div {...inViewFromRightAnimation}>
         <p className="mt-6 text-xl">
@@ -24,9 +24,9 @@ const AboutMe: FC = () => {
           качестве хобби.
         </p>
       </motion.div>
-      <motion.h6 className="text-gray mt-6" {...inViewFromBottomAnimation}>
+      <motion.p className="text-gray mt-6" {...inViewFromBottomAnimation}>
         Ответственный, Коммуникабельный, Целеустремленный
-      </motion.h6>
+      </motion.p>
     </div>
   );
 };

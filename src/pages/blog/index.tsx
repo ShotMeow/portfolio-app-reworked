@@ -9,7 +9,8 @@ const BlogPage: NextPage = () => {
     <Layout>
       <Head>
         <title>Данила Маврин - Блог</title>
-        <meta name="description" content="Страница с постами личного блога" />
+        <meta name="og:type" content="Блог" />
+        <meta name="og:url" content="https://shotmeow.dev/blog" />
       </Head>
       <Blog />
     </Layout>

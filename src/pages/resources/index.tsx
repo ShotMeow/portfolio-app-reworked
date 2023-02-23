@@ -9,10 +9,8 @@ const ResourcesPage: NextPage = () => {
     <Layout>
       <Head>
         <title>Данила Маврин - Ресурсы</title>
-        <meta
-          name="description"
-          content="Страница с полезными ресурсами для разработчиков"
-        />
+        <meta name="og:type" content="Ресурсы" />
+        <meta name="og:url" content="https://shotmeow.dev/resources" />
       </Head>
       <Resources />
     </Layout>
