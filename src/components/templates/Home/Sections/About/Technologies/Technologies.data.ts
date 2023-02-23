@@ -26,33 +26,25 @@ export const backendData: TechnologyType[] = [
   },
   {
     heading: "Структура",
-    description: "React & Next.js",
+    description: "Node.js & NestJS",
   },
   {
-    heading: "Управление состоянием",
-    description: "Redux Toolkit & React Context",
+    heading: "ORM",
+    description: "TypeORM & Sequelize",
   },
   {
-    heading: "Стилизация",
-    description: "TailwindCSS & SASS",
+    heading: "База данных",
+    description: "PostgreSQL",
   },
 ];
 
 export const designData: TechnologyType[] = [
   {
-    heading: "Язык",
-    description: "JavaScript & TypeScript",
+    heading: "Инструменты",
+    description: "Figma & Adobe Photoshop",
   },
   {
-    heading: "Структура",
-    description: "React & Next.js",
-  },
-  {
-    heading: "Управление состоянием",
-    description: "Redux Toolkit & React Context",
-  },
-  {
-    heading: "Стилизация",
-    description: "TailwindCSS & SASS",
+    heading: "Анимации",
+    description: "Adobe After Effects",
   },
 ];
