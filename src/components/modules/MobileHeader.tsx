@@ -8,16 +8,12 @@ import Vkontakte from "@/components/elements/Icons/Vkontakte";
 import Behance from "@/components/elements/Icons/Behance";
 import Menu from "@/components/elements/Icons/Menu";
 import dynamic from "next/dynamic";
-import LanguageSwitcherButtonSkeleton from "@/features/language/components/LanguageSwitcherButton/LanguageSwitcherButtonSkeleton";
-import ThemeSwitcherButtonSkeleton from "@/features/colorScheme/components/ThemeSwitcherButton/ThemeSwitcherButtonSkeleton";
-
 const MotionLink = motion(Link);
 
 const LanguageSwitcher = dynamic(
   import("@/features/language/components/LanguageSwitcher/LanguageSwitcher"),
   {
     ssr: false,
-    loading: () => <LanguageSwitcherButtonSkeleton />,
   }
 );
 
@@ -25,7 +21,6 @@ const ThemeSwitcher = dynamic(
   import("@/features/colorScheme/components/ThemeSwitcher/ThemeSwitcher"),
   {
     ssr: false,
-    loading: () => <ThemeSwitcherButtonSkeleton />,
   }
 );
 

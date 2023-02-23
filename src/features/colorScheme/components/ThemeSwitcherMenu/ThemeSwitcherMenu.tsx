@@ -1,6 +1,5 @@
 import React, { FC, HTMLAttributes } from "react";
 
-import styles from "./ThemeSwitcherMenu.module.scss";
 import { ColorScheme } from "@/features/colorScheme/types";
 import classNames from "classnames";
 import Auto from "@/components/elements/Icons/Auto";
@@ -15,25 +14,18 @@ interface Props extends HTMLAttributes<HTMLUListElement> {
 const ThemeSwitcherMenu: FC<Props> = ({
   colorScheme,
   setColorScheme,
-  className,
   ...props
 }) => {
   return (
-    <ul
-      className={classNames(
-        {
-          [styles.menu]: true,
-        },
-        "dark:bg-black",
-        className
-      )}
-      {...props}
-    >
+    <ul className="bg-white rounded-lg shadow-lg dark:bg-black" {...props}>
       <li>
         <button
-          className={classNames({
-            [styles.active]: colorScheme === ColorScheme.AUTO,
-          })}
+          className={classNames(
+            {
+              "text-white bg-blue": colorScheme === ColorScheme.AUTO,
+            },
+            "flex items-center gap-4 px-6 py-3 w-full hover:text-white hover:bg-blue rounded-t-lg"
+          )}
           onClick={() => setColorScheme(ColorScheme.AUTO)}
         >
           <Auto />
@@ -42,9 +34,12 @@ const ThemeSwitcherMenu: FC<Props> = ({
       </li>
       <li>
         <button
-          className={classNames({
-            [styles.active]: colorScheme === ColorScheme.LIGHT,
-          })}
+          className={classNames(
+            {
+              "text-white bg-blue": colorScheme === ColorScheme.LIGHT,
+            },
+            "flex items-center gap-4 px-6 py-3 w-full hover:text-white hover:bg-blue"
+          )}
           onClick={() => setColorScheme(ColorScheme.LIGHT)}
         >
           <Sun />
@@ -53,9 +48,12 @@ const ThemeSwitcherMenu: FC<Props> = ({
       </li>
       <li>
         <button
-          className={classNames({
-            [styles.active]: colorScheme === ColorScheme.DARK,
-          })}
+          className={classNames(
+            {
+              "text-white bg-blue": colorScheme === ColorScheme.DARK,
+            },
+            "flex items-center gap-4 px-6 py-3 w-full hover:text-white hover:bg-blue rounded-b-lg"
+          )}
           onClick={() => setColorScheme(ColorScheme.DARK)}
         >
           <Moon />
