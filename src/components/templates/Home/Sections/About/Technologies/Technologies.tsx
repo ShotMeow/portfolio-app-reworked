@@ -19,7 +19,7 @@ const Technologies: FC = () => {
   return (
     <div className="w-full space-y-6">
       <motion.article
-        className="bg-gradient-to-r from-white/10 to-white/5 rounded-lg p-6 flex flex-col shadow-lg"
+        className="bg-gradient-to-r from-white/10 to-white/5 rounded-lg p-6 flex flex-col shadow-custom"
         {...inViewFromBottomAnimation}
       >
         <button
@@ -45,7 +45,7 @@ const Technologies: FC = () => {
         </AnimatePresence>
       </motion.article>
       <motion.article
-        className="bg-gradient-to-r from-white/10 to-white/5 rounded-lg p-6 flex flex-col shadow-lg"
+        className="bg-gradient-to-r from-white/10 to-white/5 rounded-lg p-6 flex flex-col shadow-custom"
         {...inViewFromBottomAnimation}
       >
         <button
@@ -71,7 +71,7 @@ const Technologies: FC = () => {
         </AnimatePresence>
       </motion.article>
       <motion.article
-        className="bg-gradient-to-r from-white/10 to-white/5 rounded-lg p-6 flex flex-col shadow-lg"
+        className="bg-gradient-to-r from-white/10 to-white/5 rounded-lg p-6 flex flex-col shadow-custom"
         {...inViewFromBottomAnimation}
       >
         <button
