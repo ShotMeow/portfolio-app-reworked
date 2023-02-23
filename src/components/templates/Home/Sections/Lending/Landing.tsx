@@ -36,7 +36,7 @@ const Landing: FC = () => {
           Node, Nest, Postgres, TypeORM, Git, Prettier, ESLint, Figma
         </p>
       </motion.div>
-      <motion.div {...fromRightAnimation}>
+      <motion.div className="relative" {...fromRightAnimation}>
         <Swiper
           effect={"cards"}
           grabCursor={true}
@@ -68,6 +68,9 @@ const Landing: FC = () => {
             />
           </SwiperSlide>
         </Swiper>
+        <div className="absolute top-0 left-20 w-32 h-32 md:w-60 md:h-60 bg-blue rounded-full filter blur-3xl opacity-70 animate-blob"></div>
+        <div className="absolute top-0 right-20 w-32 h-32 md:w-72 md:h-72 bg-red rounded-full filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-0 left-40 w-32 h-32 md:w-40 md:h-40 bg-orange rounded-full filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
       </motion.div>
     </section>
   );
