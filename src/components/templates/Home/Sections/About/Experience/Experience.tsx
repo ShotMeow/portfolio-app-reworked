@@ -40,9 +40,9 @@ const Experience: FC = () => {
         <div>
           <p className="text-2xl font-black">Kodland</p>
           <p className="text-gray text-sm">Онлайн-школа цифровых навыков</p>
-          <div className="flex items-center gap-6 mt-4">
+          <div className="flex items-start flex-col sm:items-center sm:flex-row gap-2 sm:gap-6 mt-4">
             <p>Стаж: 1 год</p>
-            <div className="h-1 w-1 bg-white rounded-full" />
+            <div className="h-1 w-1 bg-white rounded-full hidden sm:block" />
             <p>Позиция: Преподаватель</p>
           </div>
           <p className="mt-6">
@@ -65,9 +65,9 @@ const Experience: FC = () => {
         <div>
           <p className="text-2xl font-black">А-БТ</p>
           <p className="text-gray text-sm">IT-компания полного цикла</p>
-          <div className="flex items-center gap-6 mt-4">
+          <div className="flex items-start flex-col sm:items-center sm:flex-row gap-2 sm:gap-6 mt-4">
             <p>Стаж: работаю в текущее время</p>
-            <div className="h-1 w-1 bg-white rounded-full" />
+            <div className="h-1 w-1 bg-white rounded-full hidden sm:block" />
             <p>Позиция: Front-end Developer</p>
           </div>
           <p className="mt-6">
