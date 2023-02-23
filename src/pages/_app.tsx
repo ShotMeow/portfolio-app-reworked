@@ -6,6 +6,7 @@ import { AppProps } from "next/app";
 import NextProgressBar from "nextjs-progressbar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
+import React from "react";
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -14,6 +15,21 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta name="og:locale" content="ru_RU" />
+        <meta name="theme-color" content="#14191F" />
+        <meta name="og:title" content="Данила Маврин" />
+        <meta
+          name="og:description"
+          content="Помогаю другим разработчикам становиться сильнее."
+        />
+        <meta
+          name="description"
+          content="Помогаю другим разработчикам становиться сильнее."
+        />
+        <meta
+          name="og:image"
+          content="https://shotmeow.dev/images/main-page.jpg"
         />
       </Head>
       <NextProgressBar

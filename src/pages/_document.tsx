@@ -18,22 +18,6 @@ const Document: NextPage<DocumentType> = () => {
           href="https://fonts.gstatic.com"
           crossOrigin={"anonymous"}
         />
-        <meta
-          name="og:title"
-          content="Данила Маврин, Full-stack JavaScript разработчик"
-        />
-        <meta
-          name="og:description"
-          content="Front-end Developer из А-БТ. Веду свой блог и помогаю другим разработчикам становиться сильнее."
-        />
-        <meta
-          name="description"
-          content="Front-end Developer из А-БТ. Веду свой блог и помогаю другим разработчикам становиться сильнее."
-        />
-        <meta
-          name="og:image"
-          content="https://shotmeow.dev/images/main-page.jpg"
-        />
       </Head>
       <body>
         <Main />
