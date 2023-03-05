@@ -18,12 +18,28 @@ const Training: FC = () => {
           Стань востребованным специалистом в сфере IT.
         </p>
       </section>
-      <section className="space-y-6 text-center">
-        <h3 className="text-4xl">Для кого этот курс</h3>
+      <section className="space-y-6">
+        <h3 className="text-4xl text-center">Стань профессионалом</h3>
+        <p className="text-xl font-thin text-gray">
+          Создавая этот курс, я ориентировался на технологии, используемые в
+          крупных международных компаниях. На курсе я помогу сформировать вам
+          полную картину современной веб-разработки.
+        </p>
         <p className="text-xl font-thin text-gray">
           Курс рассчитан для начинающих и продвинутых разработчиков, которые
           хотят повысить свою квалификацию в сфере клиентской и серверной
           разработки, или переквалифицироваться в Full-stack разработчика.
+          Помимо основных технологий, на курсе, мы также осмотрим поверхностно
+          сопровождающие технологии для появления более объемной картины полного
+          цикла разработки.
+        </p>
+        <p className="text-xl font-thin text-gray">
+          По завершению курса ты станешь сильным Front-end разработчиком с
+          хорошим знанием серверной разработки, чётко понимающим как работает
+          веб, умеющим глубоко копать и выбирать между идеальным и быстрым
+          решением. Ты научишься уверенно общаться с backend, QA и DevOps
+          специалистами, а так-же сможешь самостоятельно выполнить их базовую
+          работу.
         </p>
       </section>
       <section className="space-y-10">
@@ -31,7 +47,9 @@ const Training: FC = () => {
         <Image className="" src={roadmapSrc} alt="Roadmap" />
       </section>
       <section className="space-y-10 mb-20">
-        <h3 className="text-4xl text-center">Записаться</h3>
+        <h3 className="text-4xl text-center">
+          Остались вопросы или хочешь записаться?
+        </h3>
         <p className="text-center text-2xl">
           <Link className="underline text-blue" href="https://t.me/shotmeow">
             Telegram: @shotmeow
