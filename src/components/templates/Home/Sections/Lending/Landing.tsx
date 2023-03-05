@@ -4,12 +4,12 @@ import { EffectCards } from "swiper";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import slide1 from "./images/1.webp";
-import slide2 from "./images/2.webp";
-import slide3 from "./images/3.webp";
-import slide4 from "./images/4.webp";
-import slide5 from "./images/5.webp";
-import slide6 from "./images/6.webp";
+import slide1 from "./images/1.jpg";
+import slide2 from "./images/2.jpg";
+import slide3 from "./images/3.jpg";
+import slide4 from "./images/4.jpg";
+import slide5 from "./images/5.jpg";
+import slide6 from "./images/6.jpg";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
