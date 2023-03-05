@@ -35,6 +35,7 @@ const Document: NextPage<DocumentType> = () => {
           sizes="180x180"
           href="/favicons/favicon-180x180.png"
         />
+        <meta name="yandex-verification" content="7db0761b0a54c8b3" />
       </Head>
       <body>
         <Main />
