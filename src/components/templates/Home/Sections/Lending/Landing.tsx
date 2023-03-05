@@ -4,9 +4,12 @@ import { EffectCards } from "swiper";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import swiperSlideImageFirst from "./images/swiperSlideImageFirst.webp";
-import swiperSlideImageSecond from "./images/swiperSlideImageSecond.webp";
-import swiperSlideImageThird from "./images/swiperSlideImageThird.webp";
+import slide1 from "./images/1.webp";
+import slide2 from "./images/2.webp";
+import slide3 from "./images/3.webp";
+import slide4 from "./images/4.webp";
+import slide5 from "./images/5.webp";
+import slide6 from "./images/6.webp";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -44,28 +47,22 @@ const Landing: FC = () => {
           className="w-48 md:w-96"
         >
           <SwiperSlide className="rounded-lg shadow-custom">
-            <Image
-              src={swiperSlideImageFirst}
-              alt="Моё фото"
-              width={400}
-              priority
-            />
+            <Image src={slide1} alt="Моё фото" width={400} priority />
           </SwiperSlide>
           <SwiperSlide className="rounded-lg shadow-custom">
-            <Image
-              src={swiperSlideImageSecond}
-              alt="Моё второе фото"
-              width={400}
-              priority
-            />
+            <Image src={slide2} alt="Моё второе фото" width={400} priority />
           </SwiperSlide>
           <SwiperSlide className="rounded-lg shadow-custom">
-            <Image
-              src={swiperSlideImageThird}
-              alt="Моё третье фото"
-              width={400}
-              priority
-            />
+            <Image src={slide3} alt="Моё третье фото" width={400} priority />
+          </SwiperSlide>
+          <SwiperSlide className="rounded-lg shadow-custom">
+            <Image src={slide4} alt="Моё четвертое фото" width={400} priority />
+          </SwiperSlide>
+          <SwiperSlide className="rounded-lg shadow-custom">
+            <Image src={slide5} alt="Моё пятое фото" width={400} priority />
+          </SwiperSlide>
+          <SwiperSlide className="rounded-lg shadow-custom">
+            <Image src={slide6} alt="Моё шестое фото" width={400} priority />
           </SwiperSlide>
         </Swiper>
         <div className="absolute top-0 left-20 w-32 h-32 md:w-60 md:h-60 bg-blue rounded-full filter blur-3xl opacity-70 animate-blob"></div>
