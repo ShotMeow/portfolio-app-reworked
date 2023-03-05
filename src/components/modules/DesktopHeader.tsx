@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { fromTopAnimation } from "@/animations/base.animations";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import GitHub from "@/components/elements/Icons/GitHub";
@@ -25,10 +24,7 @@ const ThemeSwitcher = dynamic(
 
 const DesktopHeader: FC = () => {
   return (
-    <motion.header
-      className="flex items-center justify-between pt-6 relative z-20"
-      {...fromTopAnimation}
-    >
+    <header className="flex items-center justify-between pt-6 relative z-20">
       <MotionLink
         className="text-4xl font-bold"
         href="/"
@@ -47,6 +43,11 @@ const DesktopHeader: FC = () => {
             <li>
               <MotionLink href="/resources" whileTap={{ scale: 0.95 }}>
                 Ресурсы
+              </MotionLink>
+            </li>
+            <li>
+              <MotionLink href="/training" whileTap={{ scale: 0.95 }}>
+                Обучение
               </MotionLink>
             </li>
           </ul>
@@ -94,7 +95,7 @@ const DesktopHeader: FC = () => {
           </li>
         </ul>
       </div>
-    </motion.header>
+    </header>
   );
 };
 

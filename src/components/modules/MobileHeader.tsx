@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { fromTopAndExit, fromTopAnimation } from "@/animations/base.animations";
+import { fromTopAndExit } from "@/animations/base.animations";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import GitHub from "@/components/elements/Icons/GitHub";
@@ -45,10 +45,7 @@ const MobileHeader: FC = () => {
 
   return (
     <>
-      <motion.header
-        className="relative flex items-center justify-between pt-6 relative z-20"
-        {...fromTopAnimation}
-      >
+      <header className="relative flex items-center justify-between pt-6 z-20">
         <MotionLink
           whileTap={{ scale: 0.95 }}
           className="text-4xl font-bold"
@@ -65,7 +62,7 @@ const MobileHeader: FC = () => {
         >
           <Menu />
         </button>
-      </motion.header>
+      </header>
       <AnimatePresence>
         {dropdownShown && (
           <motion.div
@@ -83,6 +80,11 @@ const MobileHeader: FC = () => {
                   <li>
                     <MotionLink href="/resources" whileTap={{ scale: 0.95 }}>
                       Ресурсы
+                    </MotionLink>
+                  </li>
+                  <li>
+                    <MotionLink href="/training" whileTap={{ scale: 0.95 }}>
+                      Обучение
                     </MotionLink>
                   </li>
                 </ul>
