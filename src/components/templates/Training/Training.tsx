@@ -42,6 +42,21 @@ const Training: FC = () => {
           работу.
         </p>
       </section>
+      <section className="space-y-6">
+        <h3 className="text-4xl text-center">Что вы получите</h3>
+        <ul className="text-xl font-thin list-disc space-y-4">
+          <li>
+            Индивидуального преподавателя, сопровождающего вас на пути к
+            трудоустройству.
+          </li>
+          <li>Доступ к закрытому чату в Telegram.</li>
+          <li>
+            Отличные теоретические и практические знания после прохождения
+            курса.
+          </li>
+          <li>Интересные проекты в портфолио.</li>
+        </ul>
+      </section>
       <section className="space-y-10">
         <h3 className="text-4xl text-center">Программа курса</h3>
         <Image className="" src={roadmapSrc} alt="Roadmap" />
