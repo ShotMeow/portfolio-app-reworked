@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Image from "next/image";
-import roadmapSrc from "./images/roadmap.png";
+import roadmapSrc from "./images/roadmap.jpg";
 import Link from "next/link";
 
 const Training: FC = () => {
