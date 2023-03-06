@@ -1,7 +1,3 @@
-import {
-  applyScheme,
-  getSavedScheme,
-  getSystemScheme,
-} from "@/features/colorScheme/utils";
+import { applyScheme, getSavedScheme, getSystemScheme } from "./utils";
 
 applyScheme(getSavedScheme() || getSystemScheme());

@@ -1,8 +1,9 @@
 import React from "react";
 import { NextPage } from "next";
-import Layout from "@/components/layouts/Layout";
 import Head from "next/head";
-import Home from "@/components/templates/Home/Home";
+
+import { Layout } from "@/layouts";
+import { Home } from "@/templates/home";
 
 const HomePage: NextPage = () => {
   return (

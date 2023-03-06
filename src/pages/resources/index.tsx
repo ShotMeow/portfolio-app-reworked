@@ -1,8 +1,9 @@
 import React from "react";
 import { NextPage } from "next";
-import Layout from "@/components/layouts/Layout";
 import Head from "next/head";
-import Resources from "@/components/templates/Resources/Resources";
+
+import { Layout } from "@/layouts";
+import { Resources } from "@/templates/resources";
 
 const ResourcesPage: NextPage = () => {
   return (

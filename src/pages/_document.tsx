@@ -1,9 +1,8 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { DocumentType } from "next/dist/shared/lib/utils";
 import { NextPage } from "next";
 import React from "react";
 
-const Document: NextPage<DocumentType> = () => {
+const Document: NextPage = () => {
   return (
     <Html lang="ru">
       <Head>

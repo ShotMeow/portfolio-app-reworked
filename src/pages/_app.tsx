@@ -1,4 +1,5 @@
-import "@/styles/globals.css";
+import "@/app/styles/globals.css";
+
 import("@/features/colorScheme/initColorScheme");
 
 import { NextPage } from "next";
