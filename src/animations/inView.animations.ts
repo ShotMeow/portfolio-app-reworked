@@ -1,7 +1,4 @@
-const springTransition = {
-  type: "spring",
-  stiffness: 100,
-};
+import { springTransition } from "@/animations/transition.animations";
 
 export const inViewFromTopAnimation = {
   initial: {
