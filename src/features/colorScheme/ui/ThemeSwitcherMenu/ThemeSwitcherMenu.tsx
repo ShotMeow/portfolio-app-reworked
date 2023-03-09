@@ -26,7 +26,7 @@ const ThemeSwitcherMenu: FC<Props> = ({
             {
               "text-white bg-blue": colorScheme === ColorScheme.AUTO,
             },
-            "flex items-center gap-4 px-6 py-3 w-full hover:text-white hover:bg-blue rounded-t-lg"
+            "flex items-center gap-4 px-6 py-3 w-full rounded-t-lg"
           )}
           onClick={() => setColorScheme(ColorScheme.AUTO)}
         >
@@ -43,7 +43,7 @@ const ThemeSwitcherMenu: FC<Props> = ({
             {
               "text-white bg-blue": colorScheme === ColorScheme.LIGHT,
             },
-            "flex items-center gap-4 px-6 py-3 w-full hover:text-white hover:bg-blue"
+            "flex items-center gap-4 px-6 py-3 w-full"
           )}
           onClick={() => setColorScheme(ColorScheme.LIGHT)}
         >
@@ -60,7 +60,7 @@ const ThemeSwitcherMenu: FC<Props> = ({
             {
               "text-white bg-blue": colorScheme === ColorScheme.DARK,
             },
-            "flex items-center gap-4 px-6 py-3 w-full hover:text-white hover:bg-blue rounded-b-lg"
+            "flex items-center gap-4 px-6 py-3 w-full rounded-b-lg"
           )}
           onClick={() => setColorScheme(ColorScheme.DARK)}
         >

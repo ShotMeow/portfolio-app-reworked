@@ -18,7 +18,7 @@ const LanguageSwitcherMenu: FC<Props> = ({ locale }) => {
               {
                 "text-white bg-blue": locale === Locale.RU,
               },
-              "px-10 py-3 hover:bg-blue hover:text-white rounded-t-lg"
+              "px-10 py-3 rounded-t-lg"
             )}
           >
             Русский
@@ -32,7 +32,7 @@ const LanguageSwitcherMenu: FC<Props> = ({ locale }) => {
               {
                 "text-white bg-blue": locale === Locale.EN,
               },
-              "px-10 py-3 hover:bg-blue hover:text-white rounded-b-lg"
+              "px-10 py-3 rounded-b-lg"
             )}
           >
             English
