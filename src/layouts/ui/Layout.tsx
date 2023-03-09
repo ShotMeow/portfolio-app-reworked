@@ -33,7 +33,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
         <Header />
         {children}
       </div>
-      <div className="pointer-events-none relative">
+      <div className="pointer-events-none relative hidden lg:block">
         <motion.div
           className="fixed w-4 h-4 rounded-full bg-black dark:bg-white z-20"
           style={{
