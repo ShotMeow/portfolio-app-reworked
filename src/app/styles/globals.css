@@ -52,3 +52,7 @@ body {
 *::-webkit-scrollbar-thumb:active {
   background-color: #3b82f6;
 }
+
+* {
+  cursor: none !important;
+}
