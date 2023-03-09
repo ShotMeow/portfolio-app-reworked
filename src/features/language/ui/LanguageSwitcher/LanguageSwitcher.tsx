@@ -1,11 +1,10 @@
 import React, { FC, useRef, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-
-import { useLocale } from "../../hooks";
-
 import LanguageSwitcherButton from "../LanguageSwitcherButton/LanguageSwitcherButton";
 import LanguageSwitcherMenu from "../LanguageSwitcherMenu/LanguageSwitcherMenu";
+import { useRouter } from "next/router";
+import { Locale } from "../../types";
 
 const Dropdown = dynamic(
   () => import("@/shared/ui").then((imports) => imports.Dropdown),
@@ -15,7 +14,8 @@ const Dropdown = dynamic(
 );
 
 const LanguageSwitcher: FC = () => {
-  const { locale, setLocale } = useLocale();
+  const { locale } = useRouter();
+
   const [dropdownShown, setDropdownShown] = useState<boolean>(false);
   const targetRef = useRef<HTMLButtonElement>(null);
 
@@ -26,8 +26,8 @@ const LanguageSwitcher: FC = () => {
           event.stopPropagation();
           setDropdownShown(!dropdownShown);
         }}
+        locale={locale as Locale}
         ref={targetRef}
-        locale={locale}
         shown={dropdownShown}
       />
       <AnimatePresence>
@@ -37,10 +37,7 @@ const LanguageSwitcher: FC = () => {
             targetRef={targetRef}
             onShownChange={setDropdownShown}
           >
-            <LanguageSwitcherMenu
-              locale={locale}
-              onChangeLocale={(locale) => setLocale(locale)}
-            />
+            <LanguageSwitcherMenu locale={locale as Locale} />
           </Dropdown>
         )}
       </AnimatePresence>

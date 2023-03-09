@@ -1,15 +1,14 @@
-import React, { FC } from "react";
+import React, { FC, HTMLAttributes } from "react";
 import classNames from "classnames";
 
 import { Locale } from "../../types";
 import Link from "next/link";
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   locale: Locale;
-  onChangeLocale: (value: Locale) => void;
 }
 
-const LanguageSwitcherMenu: FC<Props> = ({ locale, onChangeLocale }) => {
+const LanguageSwitcherMenu: FC<Props> = ({ locale }) => {
   return (
     <ul className="bg-white dark:bg-black rounded-lg shadow-lg">
       <li>
@@ -21,7 +20,6 @@ const LanguageSwitcherMenu: FC<Props> = ({ locale, onChangeLocale }) => {
               },
               "px-10 py-3 hover:bg-blue hover:text-white rounded-t-lg"
             )}
-            onClick={() => onChangeLocale(Locale.RU)}
           >
             Русский
           </button>
@@ -36,7 +34,6 @@ const LanguageSwitcherMenu: FC<Props> = ({ locale, onChangeLocale }) => {
               },
               "px-10 py-3 hover:bg-blue hover:text-white rounded-b-lg"
             )}
-            onClick={() => onChangeLocale(Locale.EN)}
           >
             English
           </button>

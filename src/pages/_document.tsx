@@ -15,7 +15,7 @@ const Document: NextPage = () => {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin={"anonymous"}
+          crossOrigin="anonymous"
         />
         <link
           rel="icon"
