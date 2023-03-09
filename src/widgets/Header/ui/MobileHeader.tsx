@@ -10,6 +10,7 @@ import { TelegramIcon } from "@/shared/ui";
 import { VkontakteIcon } from "@/shared/ui";
 import { BehanceIcon } from "@/shared/ui";
 import { MenuIcon } from "@/shared/ui";
+import { FormattedMessage } from "react-intl";
 
 const MotionLink = motion(Link);
 
@@ -54,7 +55,10 @@ const MobileHeader: FC = () => {
           className="text-4xl font-bold"
           href="/"
         >
-          Данила Маврин
+          <FormattedMessage
+            id="header.logo"
+            values={{ _: (chunks) => chunks }}
+          />
         </MotionLink>
         <button
           onClick={(event) => {
@@ -77,17 +81,26 @@ const MobileHeader: FC = () => {
                 <ul className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-6 mr-10">
                   <li>
                     <MotionLink href="/blog" whileTap={{ scale: 0.95 }}>
-                      Блог
+                      <FormattedMessage
+                        id="header.nav.blog"
+                        values={{ _: (chunks) => chunks }}
+                      />
                     </MotionLink>
                   </li>
                   <li>
                     <MotionLink href="/resources" whileTap={{ scale: 0.95 }}>
-                      Ресурсы
+                      <FormattedMessage
+                        id="header.nav.resources"
+                        values={{ _: (chunks) => chunks }}
+                      />
                     </MotionLink>
                   </li>
                   <li>
                     <MotionLink href="/training" whileTap={{ scale: 0.95 }}>
-                      Обучение
+                      <FormattedMessage
+                        id="header.nav.training"
+                        values={{ _: (chunks) => chunks }}
+                      />
                     </MotionLink>
                   </li>
                 </ul>

@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { motion } from "framer-motion";
 
 import { fromBottomAnimation } from "@/shared/lib/framer";
+import { FormattedMessage } from "react-intl";
 
 const Landing: FC = () => {
   return (
@@ -17,7 +18,10 @@ const Landing: FC = () => {
         Course
       </h2>
       <p className="text-2xl font-thin text-gray mt-4">
-        Стань востребованным специалистом в сфере IT.
+        <FormattedMessage
+          id="pages.training.subtitle"
+          values={{ _: (chunks) => chunks }}
+        />
       </p>
     </motion.section>
   );

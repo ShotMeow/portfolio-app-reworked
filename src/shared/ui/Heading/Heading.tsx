@@ -12,7 +12,7 @@ const Heading: FC<PropsWithChildren> = ({ children }) => {
       <b className="absolute bottom-0 text-8xl z-0 blur-sm text-black/10 dark:text-white/10 select-none uppercase font-black hidden md:block">
         {children}
       </b>
-      <h3 className="relative z-10 text-5xl sm:text-6xl font-black">
+      <h3 className="relative z-10 text-4xl md:text-5xl sm:text-6xl font-black">
         {children}
       </h3>
     </motion.div>

@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 import { fromLeftAnimation, fromRightAnimation } from "@/shared/lib/framer";
+import { FormattedMessage } from "react-intl";
 
 const Landing: FC = () => {
   return (
@@ -23,8 +24,10 @@ const Landing: FC = () => {
           Developer
         </h1>
         <h2 className="text-2xl font-bold mt-4">
-          Front-end Developer из А-БТ. Веду свой блог и помогаю другим
-          разработчикам становиться сильнее.
+          <FormattedMessage
+            id="pages.main.landing.subtitle"
+            values={{ _: (chunks) => chunks }}
+          />
         </h2>
         <p className="mt-10">
           React, Next, TypeScript, SASS, CSS Modules, Vite, Tailwind, Redux,

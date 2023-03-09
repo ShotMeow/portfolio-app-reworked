@@ -1,0 +1,68 @@
+{
+  "header.logo": "Данила Маврин",
+
+  "header.nav.blog": "Блог",
+  "header.nav.resources": "Ресурсы",
+  "header.nav.training": "Обучение",
+
+  "theme.auto": "Авто",
+  "theme.light": "Светлая",
+  "theme.dark": "Темная",
+
+  "pages.main.landing.subtitle": "Front-end Developer из А-БТ. Веду свой блог и помогаю другим разработчикам становиться сильнее.",
+  "pages.main.heading.about": "Обо мне",
+  "pages.main.about.name": "Маврин Данила Андреевич",
+  "pages.main.about.text": "Frontend разработчик из компании А-БТ. Веду свой личный блог, где делюсь своими мыслями относительно IT-индустрии и мировозрения.",
+  "pages.main.about.text2": "Веду активную преподавательскую деятельность, пишу статьи для TProger и Habr сообщества. Занимаюсь Backend разработкой и дизайном, в качестве хобби.",
+  "pages.main.about.skills": "Ответственный, Коммуникабельный, Целеустремленный",
+
+  "pages.main.heading.experience": "Опыт работы",
+  "pages.main.experience.pictus.subtitle": "Агентство интернет-маркетинга",
+  "pages.main.experience.pictus.experience": "Стаж: 3 месяца",
+  "pages.main.experience.pictus.position": "Позиция: Веб-дизайнер",
+  "pages.main.experience.pictus.text": "Разрабатывал UI/UX дизайн для приложений клиентов компании. Я работал над проектами таких компаний, как: Vestel и aerobubble",
+  "pages.main.experience.kodland.subtitle": "Онлайн-школа цифровых навыков",
+  "pages.main.experience.kodland.experience": "Стаж: 1 год",
+  "pages.main.experience.kodland.position": "Позиция: Преподаватель",
+  "pages.main.experience.kodland.text": "Преподавал уроки по направлениям “Веб-дизайн” и “Программирование на JS”. Помимо этого работал над доработкой методологических материалов этих же направлений.",
+  "pages.main.experience.abt.subtitle": "IT-компания полного цикла",
+  "pages.main.experience.abt.experience": "Стаж: работаю в текущее время",
+  "pages.main.experience.abt.position": "Позиция: Front-end Developer",
+  "pages.main.experience.abt.text": "Разработка интерфейсов для терминалов, поддержка интерфейсов, разработка административных панелей",
+  "pages.main.experience.link": "Перейти",
+
+  "pages.main.heading.technologies": "Технологии",
+  "pages.main.technologies.lang": "Язык",
+  "pages.main.technologies.structure": "Структура",
+  "pages.main.technologies.state": "Управление состоянием",
+  "pages.main.technologies.style": "Стилизация",
+  "pages.main.technologies.db": "База данных",
+  "pages.main.technologies.tools": "Инструменты",
+  "pages.main.technologies.animation": "Анимации",
+  "pages.main.technologies.frontend.heading": "Front-end (Клиентская разработка)",
+  "pages.main.technologies.backend.heading": "Back-end (Клиентская разработка)",
+  "pages.main.technologies.design.heading": "Дизайн и прототипирование",
+
+  "pages.blog.heading": "Данный раздел находится в разработке",
+  "pages.blog.subtitle": "В этом разделе будут находиться мои статьи про IT-индустрию",
+
+  "pages.resources.heading": "Данный раздел находится в разработке",
+  "pages.resources.subtitle": "В этом разделе я буду делиться полезными ссылками на ресурсы, помогающие разработчикам",
+
+  "pages.training.subtitle": "Стань востребованным специалистом в сфере IT.",
+
+  "pages.training.professional.heading": "Стань профессионалом",
+  "pages.training.professional.text1": "Создавая этот курс, я ориентировался на технологии, используемые в крупных международных компаниях. На курсе я помогу сформировать вам полную картину современной веб-разработки.",
+  "pages.training.professional.text2": "Курс рассчитан для начинающих и продвинутых разработчиков, которые хотят повысить свою квалификацию в сфере клиентской и серверной разработки, или переквалифицироваться в Full-stack разработчика. Помимо основных технологий мы поверхностно изучим сопровождающие технологии для появления более объемной картины полного цикла разработки.",
+  "pages.training.professional.text3": "По завершении курса ты станешь сильным Front-end разработчиком с хорошим знанием серверной разработки, чётко понимающим как работает веб, умеющим глубоко копать и выбирать между идеальным и быстрым решением. Ты научишься уверенно общаться с backend, QA и DevOps специалистами, а также сможешь самостоятельно выполнить их базовую работу.",
+
+  "pages.training.get.heading": "Что вы получите",
+  "pages.training.get.text1": "Индивидуального преподавателя, сопровождающего вас на пути к трудоустройству.",
+  "pages.training.get.text2": "Доступ к закрытому чату в Telegram.",
+  "pages.training.get.text3": "Отличные теоретические и практические знания после прохождения курса.",
+  "pages.training.get.text4": "Интересные проекты в портфолио.",
+
+  "pages.training.program.heading": "Программа курса",
+
+  "pages.training.questions.heading": "Остались вопросы или хочешь записаться?"
+}

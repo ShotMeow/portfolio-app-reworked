@@ -3,6 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { inViewFromBottomAnimation } from "@/shared/lib/framer";
+import { FormattedMessage } from "react-intl";
 
 const Experience: FC = () => {
   return (
@@ -16,18 +17,40 @@ const Experience: FC = () => {
         </div>
         <div>
           <p className="text-2xl font-black">Pictus Media</p>
-          <p className="text-gray text-sm">Агентство интернет-маркетинга</p>
+          <p className="text-gray text-sm">
+            <FormattedMessage
+              id="pages.main.experience.pictus.subtitle"
+              values={{ _: (chunks) => chunks }}
+            />
+          </p>
           <div className="flex items-start flex-col sm:items-center sm:flex-row gap-2 sm:gap-6 mt-4">
-            <p>Стаж: 3 месяца</p>
+            <p>
+              <FormattedMessage
+                id="pages.main.experience.pictus.experience"
+                values={{ _: (chunks) => chunks }}
+              />
+            </p>
             <div className="h-1 w-1 bg-white rounded-full hidden sm:block" />
-            <p>Позиция: Веб-дизайнер</p>
+            <p>
+              <FormattedMessage
+                id="pages.main.experience.pictus.position"
+                values={{ _: (chunks) => chunks }}
+              />
+            </p>
           </div>
           <p className="mt-6">
-            Разрабатывал UI/UX дизайн для приложений клиентов компании. Я
-            работал над проектами таких компаний, как: Vestel и aerobubble
+            <FormattedMessage
+              id="pages.main.experience.pictus.text"
+              values={{ _: (chunks) => chunks }}
+            />
           </p>
           <button className="underline text-lg mt-4">
-            <Link href="https://pictus.media/">Перейти</Link>
+            <Link href="https://pictus.media/">
+              <FormattedMessage
+                id="pages.main.experience.link"
+                values={{ _: (chunks) => chunks }}
+              />
+            </Link>
           </button>
         </div>
       </motion.article>
@@ -40,19 +63,40 @@ const Experience: FC = () => {
         </div>
         <div>
           <p className="text-2xl font-black">Kodland</p>
-          <p className="text-gray text-sm">Онлайн-школа цифровых навыков</p>
+          <p className="text-gray text-sm">
+            <FormattedMessage
+              id="pages.main.experience.kodland.subtitle"
+              values={{ _: (chunks) => chunks }}
+            />
+          </p>
           <div className="flex items-start flex-col sm:items-center sm:flex-row gap-2 sm:gap-6 mt-4">
-            <p>Стаж: 1 год</p>
+            <p>
+              <FormattedMessage
+                id="pages.main.experience.kodland.experience"
+                values={{ _: (chunks) => chunks }}
+              />
+            </p>
             <div className="h-1 w-1 bg-white rounded-full hidden sm:block" />
-            <p>Позиция: Преподаватель</p>
+            <p>
+              <FormattedMessage
+                id="pages.main.experience.kodland.position"
+                values={{ _: (chunks) => chunks }}
+              />
+            </p>
           </div>
           <p className="mt-6">
-            Преподавал уроки по направлениям “Веб-дизайн” и “Программирование на
-            JS”. Помимо этого работал над доработкой методологических материалов
-            этих же направлений.
+            <FormattedMessage
+              id="pages.main.experience.kodland.text"
+              values={{ _: (chunks) => chunks }}
+            />
           </p>
           <button className="underline text-lg mt-4">
-            <Link href="https://www.kodland.org/">Перейти</Link>
+            <Link href="https://www.kodland.org/">
+              <FormattedMessage
+                id="pages.main.experience.link"
+                values={{ _: (chunks) => chunks }}
+              />
+            </Link>
           </button>
         </div>
       </motion.article>
@@ -65,18 +109,40 @@ const Experience: FC = () => {
         </div>
         <div>
           <p className="text-2xl font-black">А-БТ</p>
-          <p className="text-gray text-sm">IT-компания полного цикла</p>
+          <p className="text-gray text-sm">
+            <FormattedMessage
+              id="pages.main.experience.abt.subtitle"
+              values={{ _: (chunks) => chunks }}
+            />
+          </p>
           <div className="flex items-start flex-col sm:items-center sm:flex-row gap-2 sm:gap-6 mt-4">
-            <p>Стаж: работаю в текущее время</p>
+            <p>
+              <FormattedMessage
+                id="pages.main.experience.abt.experience"
+                values={{ _: (chunks) => chunks }}
+              />
+            </p>
             <div className="h-1 w-1 bg-white rounded-full hidden sm:block" />
-            <p>Позиция: Front-end Developer</p>
+            <p>
+              <FormattedMessage
+                id="pages.main.experience.abt.position"
+                values={{ _: (chunks) => chunks }}
+              />
+            </p>
           </div>
           <p className="mt-6">
-            Разработка интерфейсов для терминалов, поддержка интерфейсов,
-            разработка административных панелей
+            <FormattedMessage
+              id="pages.main.experience.abt.text"
+              values={{ _: (chunks) => chunks }}
+            />
           </p>
           <button className="underline text-lg mt-4">
-            <Link href="https://a-bt.ru/">Перейти</Link>
+            <Link href="https://a-bt.ru/">
+              <FormattedMessage
+                id="pages.main.experience.link"
+                values={{ _: (chunks) => chunks }}
+              />
+            </Link>
           </button>
         </div>
       </motion.article>

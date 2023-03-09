@@ -1,0 +1,68 @@
+{
+  "header.logo": "Danila Mavrin",
+
+  "header.nav.blog": "Blog",
+  "header.nav.resources": "Resources",
+  "header.nav.training": "Training",
+
+  "theme.auto": "Auto",
+  "theme.light": "Light",
+  "theme.dark": "Dark",
+
+  "pages.main.landing.subtitle": "Front-end Developer from A-BT. I run my blog and help other developers become stronger.",
+  "pages.main.heading.about": "About Me",
+  "pages.main.about.name": "Mavrin Danila Andreevich",
+  "pages.main.about.text": "Frontend developer from A-BT company. I keep my own personal blog, where I share my thoughts about the IT industry and worldview.",
+  "pages.main.about.text2": "I am actively teaching, writing articles for TProger and the Habr community. I am engaged in Backend development and design, as a hobby.",
+  "pages.main.about.skills": "Responsible, Sociable, Purposeful",
+
+  "pages.main.heading.experience": "Work experience",
+  "pages.main.experience.pictus.subtitle": "Internet Marketing Agency",
+  "pages.main.experience.pictus.experience": "Experience: 3 months",
+  "pages.main.experience.pictus.position": "Position: Web Designer",
+  "pages.main.experience.pictus.text": "Developed UI/UX design for the company's client applications. I have worked on projects of companies such as Vestel and aerobubble",
+  "pages.main.experience.kodland.subtitle": "Online School of Digital Skills",
+  "pages.main.experience.kodland.experience": "Experience: 1 year",
+  "pages.main.experience.kodland.position": "Position: Teacher",
+  "pages.main.experience.kodland.text": "Taught classes in the areas of “Web Design” and “Programming in JS”. In addition, he worked on the revision of methodological materials in the same areas.",
+  "pages.main.experience.abt.subtitle": "Full-cycle IT company",
+  "pages.main.experience.abt.experience": "Experience: I work at the current time",
+  "pages.main.experience.abt.position": "Position: Front-end Developer",
+  "pages.main.experience.abt.text": "Developed interfaces for terminals, interface support, development of administrative panels",
+  "pages.main.experience.link": "Link",
+
+  "pages.main.heading.technologies": "Technologies",
+  "pages.main.technologies.lang": "Language",
+  "pages.main.technologies.structure": "Structure",
+  "pages.main.technologies.state": "State management",
+  "pages.main.technologies.style": "Stylization",
+  "pages.main.technologies.db": "Database",
+  "pages.main.technologies.tools": "Tools",
+  "pages.main.technologies.animation": "Animations",
+  "pages.main.technologies.frontend.heading": "Front-end (Client development)",
+  "pages.main.technologies.backend.heading": "Back-end (Server development)",
+  "pages.main.technologies.design.heading": "Design & Prototyping",
+
+  "pages.blog.heading": "This section is under development",
+  "pages.blog.subtitle": "This section will contain my articles about the IT industry",
+
+  "pages.resources.heading": "This section is under development",
+  "pages.resources.subtitle": "In this section I will share useful links to resources that help developers",
+
+  "pages.training.subtitle": "Become a sought-after IT specialist.",
+
+  "pages.training.professional.heading": "Become a professional",
+  "pages.training.professional.text1": "When creating this course, I focused on the technologies used in large international companies. During the course, I will help you form a complete picture of modern web development.",
+  "pages.training.professional.text2": "The course is designed for beginners and advanced developers who want to improve their skills in the field of client and server development, or retrain into a Full-stack developer. In addition to the main technologies, we will superficially study the accompanying technologies for the appearance of a more voluminous picture of the full development cycle.",
+  "pages.training.professional.text3": "Upon completion of the course, you will become a strong Front-end developer with a good knowledge of server development, who clearly understands how the web works, who knows how to dig deep and choose between an ideal and a quick solution. You will learn to confidently communicate with backend, QA and DevOps specialists, and you will also be able to do their basic work yourself.",
+
+  "pages.training.get.heading": "What you will get",
+  "pages.training.get.text1": "An individual teacher accompanying you on the way to employment.",
+  "pages.training.get.text2": "Access to a private chat in Telegram.",
+  "pages.training.get.text3": "Excellent theoretical and practical knowledge after completing the course.",
+  "pages.training.get.text4": "Interesting projects in the portfolio.",
+
+  "pages.training.program.heading": "Course program",
+
+  "pages.training.questions.heading": "Do you have any questions or do you want to sign up?"
+}

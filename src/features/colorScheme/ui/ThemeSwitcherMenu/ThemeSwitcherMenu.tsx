@@ -6,6 +6,7 @@ import { ColorScheme } from "../../types";
 import { SunIcon } from "@/shared/ui";
 import { MoonIcon } from "@/shared/ui";
 import { AutoIcon } from "@/shared/ui";
+import { FormattedMessage } from "react-intl";
 
 interface Props extends HTMLAttributes<HTMLUListElement> {
   colorScheme: ColorScheme;
@@ -30,7 +31,10 @@ const ThemeSwitcherMenu: FC<Props> = ({
           onClick={() => setColorScheme(ColorScheme.AUTO)}
         >
           <AutoIcon />
-          Авто
+          <FormattedMessage
+            id="theme.auto"
+            values={{ _: (chunks) => chunks }}
+          />
         </button>
       </li>
       <li>
@@ -44,7 +48,10 @@ const ThemeSwitcherMenu: FC<Props> = ({
           onClick={() => setColorScheme(ColorScheme.LIGHT)}
         >
           <SunIcon />
-          Светлая
+          <FormattedMessage
+            id="theme.light"
+            values={{ _: (chunks) => chunks }}
+          />
         </button>
       </li>
       <li>
@@ -58,7 +65,10 @@ const ThemeSwitcherMenu: FC<Props> = ({
           onClick={() => setColorScheme(ColorScheme.DARK)}
         >
           <MoonIcon />
-          Темная
+          <FormattedMessage
+            id="theme.dark"
+            values={{ _: (chunks) => chunks }}
+          />
         </button>
       </li>
     </ul>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import roadmapSrc from "@/shared/assets/roadmap.jpg";
 import { inViewFromBottomAnimation } from "@/shared/lib/framer";
+import { FormattedMessage } from "react-intl";
 
 const Roadmap: FC = () => {
   return (
@@ -11,7 +12,12 @@ const Roadmap: FC = () => {
       className="relative space-y-10"
       {...inViewFromBottomAnimation}
     >
-      <h3 className="text-4xl text-center">Программа курса</h3>
+      <h3 className="text-4xl text-center">
+        <FormattedMessage
+          id="pages.training.program.heading"
+          values={{ _: (chunks) => chunks }}
+        />
+      </h3>
       <Image
         className="rounded-lg shadow-2xl relative z-20"
         src={roadmapSrc}

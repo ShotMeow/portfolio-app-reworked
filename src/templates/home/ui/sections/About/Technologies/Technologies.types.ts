@@ -3,8 +3,3 @@ export enum TechnologiesEnum {
   BACKEND,
   DESIGN,
 }
-
-export interface TechnologyType {
-  heading: string;
-  description: string;
-}

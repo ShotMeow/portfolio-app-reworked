@@ -2,16 +2,26 @@ import "@/app/styles/globals.css";
 
 import("@/features/colorScheme/initColorScheme");
 
+import { en, Locale, ru } from "@/features/language";
+
 import { NextPage } from "next";
 import { AppProps } from "next/app";
 import NextProgressBar from "nextjs-progressbar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
+import { IntlProvider } from "react-intl";
+
+const langMessages = {
+  en,
+  ru,
+};
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
+  const locale = localStorage.getItem("portfolio:locale") as Locale;
+
   return (
-    <>
+    <IntlProvider locale={locale} messages={langMessages[locale]}>
       <Head>
         <meta
           name="viewport"
@@ -41,7 +51,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
       />
       <Component {...pageProps} />
       <Analytics />
-    </>
+    </IntlProvider>
   );
 };
 

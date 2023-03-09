@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { motion } from "framer-motion";
 
 import { fromBottomAnimation } from "@/shared/lib/framer";
+import { FormattedMessage } from "react-intl";
 
 const Resources: FC = () => {
   return (
@@ -10,10 +11,17 @@ const Resources: FC = () => {
       {...fromBottomAnimation}
     >
       <div className="h-full container mx-auto flex flex-col items-center justify-center text-center gap-4">
-        <h6 className="text-3xl">Данный раздел находится в разработке</h6>
+        <h6 className="text-3xl">
+          <FormattedMessage
+            id="pages.resources.heading"
+            values={{ _: (chunks) => chunks }}
+          />
+        </h6>
         <p className="text-xl text-gray">
-          В этом разделе я буду делиться полезными ссылками на ресурсы,
-          помогающие разработчикам
+          <FormattedMessage
+            id="pages.resources.subtitle"
+            values={{ _: (chunks) => chunks }}
+          />
         </p>
       </div>
     </motion.main>

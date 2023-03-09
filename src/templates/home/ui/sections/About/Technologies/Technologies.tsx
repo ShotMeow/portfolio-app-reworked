@@ -4,9 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { ArrowIcon } from "@/shared/ui";
 import { TechnologiesEnum } from "./Technologies.types";
-import TechnologiesList from "./TechnologiesList/TechnologiesList";
-import { backendData, designData, frontendData } from "./Technologies.data";
-import { inViewFromBottomAnimation } from "@/shared/lib/framer";
+import {
+  heightAutoAnimation,
+  inViewFromBottomAnimation,
+} from "@/shared/lib/framer";
+import { FormattedMessage } from "react-intl";
 
 const Technologies: FC = () => {
   const [shownTechnology, setShownTechnology] = useState<TechnologiesEnum>(
@@ -24,7 +26,10 @@ const Technologies: FC = () => {
           onClick={() => setShownTechnology(TechnologiesEnum.FRONTEND)}
         >
           <p className="text-xl font-bold text-start">
-            Front-end (Клиентская разработка)
+            <FormattedMessage
+              id="pages.main.technologies.frontend.heading"
+              values={{ _: (chunks) => chunks }}
+            />
           </p>
           <ArrowIcon
             className={classNames(
@@ -37,7 +42,46 @@ const Technologies: FC = () => {
         </button>
         <AnimatePresence>
           {shownTechnology === TechnologiesEnum.FRONTEND && (
-            <TechnologiesList items={frontendData} />
+            <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.lang"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">JavaScript & TypeScript</p>
+              </li>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.structure"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">React & Next.js</p>
+              </li>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.state"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">
+                  Redux Toolkit & React Context
+                </p>
+              </li>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.style"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">SASS & TailwindCSS</p>
+              </li>
+            </motion.ul>
           )}
         </AnimatePresence>
       </motion.article>
@@ -50,7 +94,10 @@ const Technologies: FC = () => {
           onClick={() => setShownTechnology(TechnologiesEnum.BACKEND)}
         >
           <p className="text-xl font-bold text-start">
-            Back-end (Серверная разработка)
+            <FormattedMessage
+              id="pages.main.technologies.backend.heading"
+              values={{ _: (chunks) => chunks }}
+            />
           </p>
           <ArrowIcon
             className={classNames(
@@ -63,7 +110,39 @@ const Technologies: FC = () => {
         </button>
         <AnimatePresence>
           {shownTechnology === TechnologiesEnum.BACKEND && (
-            <TechnologiesList items={backendData} />
+            <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.lang"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">JavaScript & TypeScript</p>
+              </li>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.structure"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">Node.js & NestJS</p>
+              </li>
+              <li>
+                <p className="text-gray">ORM</p>
+                <p className="text-xl font-bold">TypeORM</p>
+              </li>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.db"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">PostgreSQL</p>
+              </li>
+            </motion.ul>
           )}
         </AnimatePresence>
       </motion.article>
@@ -75,7 +154,12 @@ const Technologies: FC = () => {
           className="flex items-center justify-between"
           onClick={() => setShownTechnology(TechnologiesEnum.DESIGN)}
         >
-          <p className="text-xl font-bold text-start">Design</p>
+          <p className="text-xl font-bold text-start">
+            <FormattedMessage
+              id="pages.main.technologies.design.heading"
+              values={{ _: (chunks) => chunks }}
+            />
+          </p>
           <ArrowIcon
             className={classNames(
               {
@@ -87,7 +171,26 @@ const Technologies: FC = () => {
         </button>
         <AnimatePresence>
           {shownTechnology === TechnologiesEnum.DESIGN && (
-            <TechnologiesList items={designData} />
+            <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.tools"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">Figma & Adobe Photoshop</p>
+              </li>
+              <li>
+                <p className="text-gray">
+                  <FormattedMessage
+                    id="pages.main.technologies.animation"
+                    values={{ _: (chunks) => chunks }}
+                  />
+                </p>
+                <p className="text-xl font-bold">Adobe After Effects</p>
+              </li>
+            </motion.ul>
           )}
         </AnimatePresence>
       </motion.article>
