@@ -1,7 +1,4 @@
 import "@/app/styles/globals.css";
-
-import("@/features/colorScheme/initColorScheme");
-
 import { en, Locale, ru } from "@/features/language";
 
 import { NextPage } from "next";
@@ -11,6 +8,9 @@ import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { IntlProvider } from "react-intl";
+import { useRouter } from "next/router";
+
+import("@/features/colorScheme/initColorScheme");
 
 const langMessages = {
   en,
@@ -18,7 +18,13 @@ const langMessages = {
 };
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
-  const locale = localStorage.getItem("portfolio:locale") as Locale;
+  let locale: Locale = Locale.RU;
+
+  const { locale: routerLocale } = useRouter();
+
+  if (routerLocale) {
+    locale = routerLocale as Locale;
+  }
 
   return (
     <IntlProvider locale={locale} messages={langMessages[locale]}>
