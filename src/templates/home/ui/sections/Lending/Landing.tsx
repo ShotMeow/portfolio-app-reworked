@@ -39,7 +39,7 @@ const Landing: FC = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="w-48 md:w-96"
+          className="w-48 md:w-96 select-none"
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.src} className="rounded-lg shadow-custom">
