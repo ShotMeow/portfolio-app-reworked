@@ -58,7 +58,13 @@ const Landing: FC = () => {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.src} className="rounded-lg shadow-custom">
-              <Image src={slide} alt="Моё фото" width={400} priority />
+              <Image
+                placeholder="blur"
+                src={slide}
+                alt="Моё фото"
+                width={400}
+                priority
+              />
             </SwiperSlide>
           ))}
         </Swiper>
