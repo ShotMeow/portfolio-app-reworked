@@ -22,7 +22,7 @@ const Technologies: FC = () => {
         {...inViewFromBottomAnimation}
       >
         <button
-          className="flex items-center justify-between"
+          className="flex items-center justify-between select-none"
           onClick={() => setShownTechnology(TechnologiesEnum.FRONTEND)}
         >
           <p className="text-xl font-bold text-start">
@@ -44,7 +44,7 @@ const Technologies: FC = () => {
           {shownTechnology === TechnologiesEnum.FRONTEND && (
             <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.lang"
                     values={{ _: (chunks) => chunks }}
@@ -53,7 +53,7 @@ const Technologies: FC = () => {
                 <p className="text-xl font-bold">JavaScript & TypeScript</p>
               </li>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.structure"
                     values={{ _: (chunks) => chunks }}
@@ -62,7 +62,7 @@ const Technologies: FC = () => {
                 <p className="text-xl font-bold">React & Next.js</p>
               </li>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.state"
                     values={{ _: (chunks) => chunks }}
@@ -73,7 +73,7 @@ const Technologies: FC = () => {
                 </p>
               </li>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.style"
                     values={{ _: (chunks) => chunks }}
@@ -90,7 +90,7 @@ const Technologies: FC = () => {
         {...inViewFromBottomAnimation}
       >
         <button
-          className="flex items-center justify-between"
+          className="flex items-center justify-between select-none"
           onClick={() => setShownTechnology(TechnologiesEnum.BACKEND)}
         >
           <p className="text-xl font-bold text-start">
@@ -112,7 +112,7 @@ const Technologies: FC = () => {
           {shownTechnology === TechnologiesEnum.BACKEND && (
             <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.lang"
                     values={{ _: (chunks) => chunks }}
@@ -121,7 +121,7 @@ const Technologies: FC = () => {
                 <p className="text-xl font-bold">JavaScript & TypeScript</p>
               </li>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.structure"
                     values={{ _: (chunks) => chunks }}
@@ -134,7 +134,7 @@ const Technologies: FC = () => {
                 <p className="text-xl font-bold">TypeORM</p>
               </li>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.db"
                     values={{ _: (chunks) => chunks }}
@@ -151,7 +151,7 @@ const Technologies: FC = () => {
         {...inViewFromBottomAnimation}
       >
         <button
-          className="flex items-center justify-between"
+          className="flex items-center justify-between select-none"
           onClick={() => setShownTechnology(TechnologiesEnum.DESIGN)}
         >
           <p className="text-xl font-bold text-start">
@@ -173,7 +173,7 @@ const Technologies: FC = () => {
           {shownTechnology === TechnologiesEnum.DESIGN && (
             <motion.ul className="space-y-4 mt-6" {...heightAutoAnimation}>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.tools"
                     values={{ _: (chunks) => chunks }}
@@ -182,7 +182,7 @@ const Technologies: FC = () => {
                 <p className="text-xl font-bold">Figma & Adobe Photoshop</p>
               </li>
               <li>
-                <p className="text-gray">
+                <p className="text-gray select-none">
                   <FormattedMessage
                     id="pages.main.technologies.animation"
                     values={{ _: (chunks) => chunks }}

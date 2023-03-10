@@ -20,7 +20,7 @@ const LanguageSwitcher: FC = () => {
   const targetRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div>
+    <div className="select-none">
       <LanguageSwitcherButton
         onClick={(event) => {
           event.stopPropagation();

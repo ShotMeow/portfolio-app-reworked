@@ -41,7 +41,7 @@ const About: FC = () => {
       <div className="flex flex-col items-center md:flex-row md:items-start gap-20 my-10 md:my-24">
         <motion.aside className="shrink-0" {...inViewFromLeftAnimation}>
           <ul className="flex items-center gap-6 flex-col sm:flex-row md:flex-col md:items-start">
-            <li>
+            <li className="select-none">
               <motion.button
                 className={classNames({
                   "text-gray": step !== 1,
@@ -56,7 +56,7 @@ const About: FC = () => {
                 />
               </motion.button>
             </li>
-            <li>
+            <li className="select-none">
               <motion.button
                 className={classNames({
                   "text-gray": step !== 2,
@@ -71,7 +71,7 @@ const About: FC = () => {
                 />
               </motion.button>
             </li>
-            <li>
+            <li className="select-none">
               <motion.button
                 className={classNames({
                   "text-gray": step !== 3,

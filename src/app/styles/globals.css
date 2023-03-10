@@ -27,6 +27,10 @@ body {
   width: 4px;
 }
 
+* {
+  cursor: none !important;
+}
+
 *::-webkit-scrollbar-track {
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
@@ -51,8 +55,4 @@ body {
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #3b82f6;
-}
-
-* {
-  cursor: none !important;
 }

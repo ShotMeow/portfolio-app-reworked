@@ -20,7 +20,7 @@ const ThemeSwitcher: FC = () => {
   const targetRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div>
+    <div className="select-none">
       <ThemeSwitcherButton
         onClick={(event) => {
           event.stopPropagation();
