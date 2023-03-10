@@ -5,4 +5,4 @@ import slide4 from "./images/swiperSlide4.jpg";
 import slide5 from "./images/swiperSlide5.jpg";
 import slide6 from "./images/swiperSlide6.jpg";
 
-export const slides = [slide1, slide2, slide3, slide4, slide5, slide6];
+export const images = [slide1, slide2, slide3, slide4, slide5, slide6];

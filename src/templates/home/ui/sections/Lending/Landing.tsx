@@ -1,10 +1,10 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
-import { slides } from "@/shared/assets/swiper/slides";
+import { images } from "@/shared/assets/swiper";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -13,6 +13,21 @@ import { fromLeftAnimation, fromRightAnimation } from "@/shared/lib/framer";
 import { FormattedMessage } from "react-intl";
 
 const Landing: FC = () => {
+  const [slides, setSlides] = useState<StaticImageData[]>([]);
+
+  useEffect(() => {
+    const slidesArr = [];
+
+    for (let i = 0; i < 3; i++) {
+      const randomImageId = Math.floor(Math.random() * images.length);
+      slidesArr.push(images[randomImageId]);
+
+      images.splice(randomImageId, 1);
+    }
+
+    setSlides(slidesArr);
+  }, []);
+
   return (
     <section className="grid items-center lg:grid-cols-2 my-20 lg:my-40 gap-10">
       <motion.div {...fromLeftAnimation}>
