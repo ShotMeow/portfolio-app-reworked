@@ -1,17 +1,38 @@
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 
-import { fromBottomAnimation } from "@/shared/lib/framer";
+import { fromLeftAnimation } from "@/shared/lib/framer";
 import { FormattedMessage } from "react-intl";
 import { cards } from "../utils";
 import Link from "next/link";
 
 const MotionLink = motion(Link);
 
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, x: 50 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
 const Resources: FC = () => {
   return (
-    <motion.main className="mt-20" {...fromBottomAnimation}>
-      <div className="space-y-4">
+    <main className="mt-20">
+      <motion.div className="space-y-4" {...fromLeftAnimation}>
         <h1 className="text-5xl font-black">
           <FormattedMessage
             id="pages.resources.heading"
@@ -24,19 +45,28 @@ const Resources: FC = () => {
             values={{ _: (chunks) => chunks }}
           />
         </p>
-      </div>
-      <div className="grid xl:grid-cols-4 mt-10 gap-6">
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className="grid xl:grid-cols-4 mt-10 gap-6"
+        initial="hidden"
+        animate="show"
+      >
         {cards.map((card) => (
           <MotionLink
             className="inline-block"
             key={card.id}
             href={card.url}
             target="_blank"
-            whileHover={{ scale: 1.02 }}
+            whileHover={{
+              scale: 1.02,
+              transition: { type: "spring", velocity: 0.5 },
+            }}
+            variants={item}
             whileTap={{ scale: 0.9 }}
           >
             <article
-              className="flex flex-col justify-end p-6 rounded-lg shadow-2xl h-48 bg-cover"
+              className="flex flex-col justify-end p-6 rounded-lg shadow-2xl h-48 bg-cover text-white"
               style={{
                 background: `linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${card.image})`,
                 backgroundSize: "cover",
@@ -52,8 +82,8 @@ const Resources: FC = () => {
             </article>
           </MotionLink>
         ))}
-      </div>
-    </motion.main>
+      </motion.div>
+    </main>
   );
 };
 

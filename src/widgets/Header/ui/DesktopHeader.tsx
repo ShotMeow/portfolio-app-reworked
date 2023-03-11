@@ -27,7 +27,7 @@ const ThemeSwitcher = dynamic(
 
 const DesktopHeader: FC = () => {
   return (
-    <header className="flex items-center justify-between pt-6 relative z-20">
+    <header className="flex items-center justify-between pt-6 relative z-50">
       <MotionLink
         className="text-4xl font-bold"
         href="/"
