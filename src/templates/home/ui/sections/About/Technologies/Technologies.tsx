@@ -130,7 +130,7 @@ const Technologies: FC = () => {
                 <p className="text-xl font-bold">Node.js & NestJS</p>
               </li>
               <li>
-                <p className="text-gray">ORM</p>
+                <p className="text-gray select-none">ORM</p>
                 <p className="text-xl font-bold">TypeORM</p>
               </li>
               <li>

@@ -19,9 +19,11 @@ const Roadmap: FC = () => {
         />
       </h3>
       <Image
+        placeholder="blur"
         className="rounded-lg shadow-2xl relative z-20"
         src={roadmapSrc}
         alt="Roadmap"
+        priority
       />
       <div className="absolute -top-10 left-20 w-32 h-32 md:w-60 md:h-60 bg-blue rounded-full filter blur-3xl opacity-70 animate-blob" />
       <div className="absolute -top-20 right-0 w-32 h-32 md:w-72 md:h-72 z-30 bg-red rounded-full filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
