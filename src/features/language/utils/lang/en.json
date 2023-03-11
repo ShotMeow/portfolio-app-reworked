@@ -24,7 +24,7 @@
   "pages.main.experience.kodland.subtitle": "Online School of Digital Skills",
   "pages.main.experience.kodland.experience": "Experience: 1 year",
   "pages.main.experience.kodland.position": "Position: Teacher",
-  "pages.main.experience.kodland.text": "Taught classes in the areas of “Web Design” and “Programming in JS”. In addition, he worked on the revision of methodological materials in the same areas.",
+  "pages.main.experience.kodland.text": "Taught classes in the areas of “Web Design” and “Programming in JS”. In addition, worked on the revision of methodological materials in the same areas.",
   "pages.main.experience.abt.subtitle": "Full-cycle IT company",
   "pages.main.experience.abt.experience": "Experience: I work at the current time",
   "pages.main.experience.abt.position": "Position: Front-end Developer",
@@ -46,8 +46,13 @@
   "pages.blog.heading": "This section is under development",
   "pages.blog.subtitle": "This section will contain my articles about the IT industry",
 
-  "pages.resources.heading": "This section is under development",
-  "pages.resources.subtitle": "In this section I will share useful links to resources that help developers",
+  "pages.resources.heading": "Useful resources",
+  "pages.resources.subtitle": "On this page you can find useful websites and applications for the developer.",
+
+  "pages.resources.resource1.description": "Ideas for pet projects",
+  "pages.resources.resource2.description": "Compressor for images",
+  "pages.resources.resource3.description": "Check Bundle Size",
+  "pages.resources.resource4.description": "Files Converter",
 
   "pages.training.subtitle": "Become a sought-after IT specialist.",
 
