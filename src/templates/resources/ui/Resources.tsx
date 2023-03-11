@@ -6,6 +6,8 @@ import { FormattedMessage } from "react-intl";
 import { cards } from "../utils";
 import Link from "next/link";
 
+const MotionLink = motion(Link);
+
 const Resources: FC = () => {
   return (
     <motion.main className="mt-20" {...fromBottomAnimation}>
@@ -25,7 +27,14 @@ const Resources: FC = () => {
       </div>
       <div className="grid xl:grid-cols-4 mt-10 gap-6">
         {cards.map((card) => (
-          <Link key={card.id} href={card.url} target="_blank">
+          <MotionLink
+            className="inline-block"
+            key={card.id}
+            href={card.url}
+            target="_blank"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <article
               className="flex flex-col justify-end p-6 rounded-lg shadow-2xl h-48 bg-cover"
               style={{
@@ -41,7 +50,7 @@ const Resources: FC = () => {
                 />
               </p>
             </article>
-          </Link>
+          </MotionLink>
         ))}
       </div>
     </motion.main>

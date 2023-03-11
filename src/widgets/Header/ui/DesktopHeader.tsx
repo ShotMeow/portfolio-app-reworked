@@ -39,7 +39,11 @@ const DesktopHeader: FC = () => {
         <nav>
           <ul className="flex items-center gap-6 mr-10">
             <li>
-              <MotionLink href="/blog" whileTap={{ scale: 0.95 }}>
+              <MotionLink
+                className="inline-block"
+                href="/blog"
+                whileTap={{ scale: 0.95 }}
+              >
                 <FormattedMessage
                   id="header.nav.blog"
                   values={{ _: (chunks) => chunks }}
@@ -47,7 +51,11 @@ const DesktopHeader: FC = () => {
               </MotionLink>
             </li>
             <li>
-              <MotionLink href="/resources" whileTap={{ scale: 0.95 }}>
+              <MotionLink
+                className="inline-block"
+                href="/resources"
+                whileTap={{ scale: 0.95 }}
+              >
                 <FormattedMessage
                   id="header.nav.resources"
                   values={{ _: (chunks) => chunks }}
@@ -55,7 +63,11 @@ const DesktopHeader: FC = () => {
               </MotionLink>
             </li>
             <li>
-              <MotionLink href="/training" whileTap={{ scale: 0.95 }}>
+              <MotionLink
+                className="inline-block"
+                href="/training"
+                whileTap={{ scale: 0.95 }}
+              >
                 <FormattedMessage
                   id="header.nav.training"
                   values={{ _: (chunks) => chunks }}
@@ -71,36 +83,44 @@ const DesktopHeader: FC = () => {
         <ul className="flex items-center gap-4">
           <li className="transition-transform hover:scale-105">
             <MotionLink
+              className="inline-block"
               whileTap={{ scale: 0.95 }}
               href="https://github.com/ShotMeow"
               aria-label="Ссылка на GitHub"
+              target="_blank"
             >
               <GithubIcon />
             </MotionLink>
           </li>
           <li className="transition-transform hover:scale-105">
             <MotionLink
+              className="inline-block"
               whileTap={{ scale: 0.95 }}
               href="https://t.me/sexy_shotmeow"
               aria-label="Ссылка на Telegram"
+              target="_blank"
             >
               <TelegramIcon />
             </MotionLink>
           </li>
           <li className="transition-transform hover:scale-105">
             <MotionLink
+              className="inline-block"
               whileTap={{ scale: 0.95 }}
               href="https://vk.com/sexy_shotmeow"
               aria-label="Ссылка на VK"
+              target="_blank"
             >
               <VkontakteIcon />
             </MotionLink>
           </li>
           <li className="transition-transform hover:scale-105">
             <MotionLink
+              className="inline-block"
               whileTap={{ scale: 0.95 }}
               href="https://www.behance.net/shotmeow"
               aria-label="Ссылка на Behance"
+              target="_blank"
             >
               <BehanceIcon />
             </MotionLink>

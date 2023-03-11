@@ -49,7 +49,11 @@ const Landing: FC = () => {
           Node, Nest, Postgres, TypeORM, Git, Prettier, ESLint, Figma
         </p>
       </motion.div>
-      <motion.div className="relative" {...fromRightAnimation}>
+      <motion.div
+        whileHover={{ scale: 1.03 }}
+        className="relative"
+        {...fromRightAnimation}
+      >
         <Swiper
           effect={"cards"}
           grabCursor={true}
