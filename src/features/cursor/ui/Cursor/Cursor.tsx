@@ -28,7 +28,7 @@ export const Cursor: FC = () => {
   return (
     <div className="pointer-events-none relative hidden lg:block">
       <motion.div
-        className="fixed w-4 h-4 rounded-full bg-black dark:bg-white z-20"
+        className="fixed w-4 h-4 rounded-full bg-black dark:bg-white z-50"
         style={{
           top: "8px",
           left: "8px",
@@ -38,7 +38,7 @@ export const Cursor: FC = () => {
         }}
       />
       <motion.div
-        className="fixed w-5 h-5 rounded-full bg-black/20 dark:bg-white/20 z-20"
+        className="fixed w-5 h-5 rounded-full bg-black/20 dark:bg-white/20 z-50"
         style={{
           top: "6px",
           left: "6px",
