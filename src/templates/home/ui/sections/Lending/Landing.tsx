@@ -50,16 +50,6 @@ const Landing: FC = () => {
         </p>
       </motion.div>
       <motion.div
-        drag
-        dragConstraints={{
-          top: -1,
-          left: -1,
-          right: 1,
-          bottom: 1,
-        }}
-        whileHover={{
-          scale: 1.03,
-        }}
         className="relative z-20"
         {...fromRightAnimation}
       >
