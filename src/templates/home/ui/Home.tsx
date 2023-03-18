@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import Landing from "./sections/Lending/Landing";
+import Landing from "@/templates/home/ui/sections/Landing/Landing";
 import About from "./sections/About/About";
 
 const Home: FC = () => {
