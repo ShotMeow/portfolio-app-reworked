@@ -1,4 +1,4 @@
 export const springTransition = {
-    type: "spring",
-    stiffness: 100,
+  type: "spring",
+  stiffness: 100,
 };

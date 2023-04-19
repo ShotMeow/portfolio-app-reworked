@@ -49,10 +49,7 @@ const Landing: FC = () => {
           Node, Nest, Postgres, TypeORM, Git, Prettier, ESLint, Figma
         </p>
       </motion.div>
-      <motion.div
-        className="relative z-20"
-        {...fromRightAnimation}
-      >
+      <motion.div className="relative z-20" {...fromRightAnimation}>
         <Swiper
           effect={"cards"}
           grabCursor={true}

@@ -33,7 +33,13 @@ export const cards: CardType[] = [
     id: 5,
     title: "Carbon",
     image:
-        "https://avatars.mds.yandex.net/i?id=a5fdc3f704904d1ffe08e1bf6073305a-6881974-images-thumbs&n=13",
+      "https://avatars.mds.yandex.net/i?id=a5fdc3f704904d1ffe08e1bf6073305a-6881974-images-thumbs&n=13",
     url: "https://carbon.now.sh/",
+  },
+  {
+    id: 6,
+    title: "Roadmap.sh",
+    image: "https://d4.alternativeto.net/bXndJepPNf9_e9hgwYV073akGfmEPNCn7ruBojKxxss/rs:fit:1200:1200:0/g:ce:0:0/YWJzOi8vZGlzdC9zL3JvYWRtYXAtc2hfNzk3NTQ2X2Z1bGwucG5n.jpg",
+    url: "https://roadmap.sh/",
   },
 ];
