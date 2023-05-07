@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
-export const Navigation: FC<Props> = ({className, ...props}) => {
+export const Navigation: FC<Props> = ({className = "", ...props}) => {
 	return (
 		<nav className={`my-16 ${className}`} {...props}>
 			<ul className="flex items-center gap-6 md:gap-10 text-gray text-sm">

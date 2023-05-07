@@ -5,7 +5,7 @@ import Link from "next/link";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
-export const Header: FC<Props> = ({className, ...props}) => {
+export const Header: FC<Props> = ({className = "", ...props}) => {
 	return (
 		<header className={`fixed left-0 top-0 w-full my-42 ${className}`} {...props}>
 			<div className="flex items-center justify-between container mx-auto">
