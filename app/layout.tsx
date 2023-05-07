@@ -1,7 +1,8 @@
-import "./globals.css";
+import "@/src/assets/globals.css";
+
 import { Urbanist } from "next/font/google";
 import LocalFont from "next/font/local";
-import {Particles} from "@/app/components/Particles";
+import { Particles } from "@/src/components/Particles";
 
 export const metadata = {
 	title: "Данила Маврин",

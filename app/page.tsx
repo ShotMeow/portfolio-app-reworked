@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Navigation } from "@/app/components/Navigation";
+import { Navigation } from "@/src/components/Navigation";
 import Link from "next/link";
 
 const HomePage: NextPage = () => {
