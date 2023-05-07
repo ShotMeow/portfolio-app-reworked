@@ -17,7 +17,7 @@ export const Header: FC<Props> = ({ className = "", ...props }) => {
 			>
 				<Arrow />
 			</Link>
-			<Navigation />
+			<Navigation className="gap-4 md:gap-10" />
 		</header>
 	);
 };

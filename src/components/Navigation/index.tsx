@@ -5,14 +5,14 @@ import { navigationData } from "./utils/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-interface Props extends HTMLAttributes<HTMLDivElement> {}
+interface Props extends HTMLAttributes<HTMLDListElement> {}
 
-export const Navigation: FC<Props> = ({ ...props }) => {
+export const Navigation: FC<Props> = ({ className = "", ...props }) => {
 	const pathname = usePathname();
 
 	return (
-		<nav {...props}>
-			<ul className="flex items-center gap-10 md:gap-8 text-gray text-sm">
+		<nav>
+			<ul className={`flex items-center text-gray text-sm ${className}`} {...props}>
 				{navigationData.map((navItem) => (
 					<li
 						className={`hover:text-blue-500 active:scale-90 transition-transform duration-500 ${
