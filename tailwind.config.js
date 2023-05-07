@@ -31,13 +31,20 @@ module.exports = {
 					"0%": {
 						opacity: "0%",
 					},
+					"20%": {
+						opacity: "0",
+					},
 					"100%": {
 						opacity: "100%",
 					},
 				},
 				title: {
 					"0%": {
+						"line-height": "0%",
 						"letter-spacing": "0.5em",
+						opacity: "0",
+					},
+					"20%": {
 						opacity: "0",
 					},
 					"80%": {
@@ -45,6 +52,7 @@ module.exports = {
 					},
 
 					"100%": {
+						"line-height": "100%",
 						opacity: "100%",
 					},
 				},
