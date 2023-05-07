@@ -1,20 +1,18 @@
 import "./globals.css";
 import { Urbanist } from "next/font/google";
 import LocalFont from "next/font/local";
+import {Particles} from "@/app/components/Particles";
 
 export const metadata = {
-	title: {
-		default: "shotmeow.dev",
-		template: "%s | shotmeow.dev",
-	},
+	title: "Данила Маврин",
 	description:
 		"Front-end Developer из А-БТ. Веду свой блог и помогаю другим разработчикам становиться сильнее.",
 	openGraph: {
-		title: "shotmeow.dev",
+		title: "Данила Маврин",
 		description:
 			"Front-end Developer из А-БТ. Веду свой блог и помогаю другим разработчикам становиться сильнее.",
 		url: "https://shotmeow.dev",
-		siteName: "shotmeow.dev",
+		siteName: "Данила Маврин",
 		images: [
 			{
 				url: "/og.jpg",
@@ -37,7 +35,7 @@ export const metadata = {
 		},
 	},
 	twitter: {
-		title: "ShotMeow",
+		title: "Данила Маврин",
 		card: "summary_large_image",
 	},
 	icons: {
@@ -51,7 +49,7 @@ const urbanist = Urbanist({
 });
 
 const calSans = LocalFont({
-	src: "../public/fonts/CalSans-SemiBold.ttf",
+	src: "../public/fonts/CalSans-SemiBold.woff2",
 	variable: "--font-calsans",
 });
 
@@ -62,7 +60,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="ru" className={[urbanist.variable, calSans.variable].join(" ")}>
-			<body>{children}</body>
+			<body>
+			<Particles
+				className="absolute inset-0 -z-10 animate-fade-in"
+				quantity={100}
+			/>
+			{children}
+			</body>
 		</html>
 	);
 }

@@ -1,10 +1,8 @@
-import {NextPage} from "next";
-import {InDevelopment} from "@/app/components/InDevelopment/InDevelopment";
+import { NextPage } from "next";
+import { InDevelopment } from "@/app/components/InDevelopment/InDevelopment";
 
 const ExperiencePage: NextPage = () => {
-    return (
-        <InDevelopment />
-    );
+	return <InDevelopment />;
 };
 
 export default ExperiencePage;
