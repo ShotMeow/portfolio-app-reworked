@@ -10,10 +10,6 @@ export const navigationData: NavItemType[] = [
 		href: "/resources",
 	},
 	{
-		title: "Опыт",
-		href: "/experience",
-	},
-	{
 		title: "Контакты",
 		href: "/contacts",
 	},

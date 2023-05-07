@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { InDevelopment } from "@/app/components/InDevelopment/InDevelopment";
+import { InDevelopment } from "@/app/components/InDevelopment";
 
 const ResourcesPage: NextPage = () => {
 	return <InDevelopment />;

@@ -7,11 +7,11 @@ import {usePathname} from "next/navigation";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
-export const Navigation: FC<Props> = ({className = "", ...props}) => {
+export const Navigation: FC<Props> = ({...props}) => {
 	const pathname = usePathname();
 
 	return (
-		<nav className={`my-16 ${className}`} {...props}>
+		<nav {...props}>
 			<ul className="flex items-center gap-6 md:gap-10 text-gray text-sm">
 				{navigationData.map((navItem) => (
 					<li
