@@ -17,7 +17,7 @@ export const metadata = {
 		siteName: "shotmeow.dev",
 		images: [
 			{
-				url: "https://shotmeow.dev/og.jpg",
+				url: "/og.jpg",
 				width: 1920,
 				height: 1080,
 			},
