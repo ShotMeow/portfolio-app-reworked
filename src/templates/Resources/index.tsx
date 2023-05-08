@@ -19,9 +19,9 @@ export const Resources: FC = () => {
 						приложения.
 					</p>
 				</div>
-				<section className="grid grid-cols-3 gap-16 py-10">
+				<section className="grid md:grid-cols-3 gap-8 md:gap-16 py-10">
 					{resourcesData.map((item) => (
-						<Card className="first:col-start-1 first:col-end-3 first:row-start-1 first:row-end-3 last:col-start-2 last:col-end-4" key={item.label}>
+						<Card className="md:first:col-start-1 md:first:col-end-3 md:first:row-start-1 md:first:row-end-3 md:last:col-start-2 md:last:col-end-4" key={item.label}>
 							<Link
 								href={item.href}
 								target="_blank"
