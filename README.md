@@ -1,23 +1,45 @@
-<h1 align="center">Portfolio App Reworked</h1>
+# shotmeow.dev
 
-![Screen Shot](https://github.com/ShotMeow/ShotMeow/blob/main/assets/portfolio-website/preview.png)
+![App Screenshot](https://github.com/ShotMeow/portfolio-app-reworked/blob/main/public/og.jpg?raw=true)
 
-<h2 align="center">О проекте</h2>
-<p align="center">Portfolio App Reworked - реализация веб-приложения с информацией обо мне, как о разработчике.</p>
+My personal website, built with Next.js, Tailwind CSS and deployed to Vercel. Here you can read information about me, find useful resources for developers, and also read my author's articles
 
-<h2 align="center">Стэк технологий</h2>
-<ul>
-    <li><a href="https://github.com/microsoft/TypeScript" target="_blank">TypeScript</a></li>
-    <li><a href="https://github.com/vercel/next.js" target="_blank">Next.js</a></li>
-    <li><a href="https://github.com/sass/sass" target="_blank">SASS</a></li>
-    <li><a href="https://github.com/tailwindlabs/tailwindcss" target="_blank">TailwindCSS</a></li>
-    <li><a href="https://github.com/facebook/react" target="_blank">React</a></li>
-    <li><a href="https://github.com/nolimits4web/swiper" target="_blank">Swiper</a></li>
-</ul>
 
-<h2 align="center">Запуск репозитория</h2>
+## Running Locally
+
+Clone project
 
 ```bash
-npm install // Установка необходимых пакетов
-npm run dev // Запуск сервера разработки
+  git clone https://github.com/ShotMeow/portfolio-app-reworked.git
 ```
+
+Go to project directory
+
+```bash
+  cd portfolio-app-reworked
+```
+
+Install dependencies
+
+```bash
+  pnpm install
+
+```
+
+Start development server
+
+```bash
+  pnpm run dev
+```
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at shotmeow@gmail.com
+
+
+## Tech Stack
+
+**Client:** React, Framer Motion, TailwindCSS
+
+**Server:** Next
