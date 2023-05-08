@@ -62,11 +62,13 @@ export default function RootLayout({
 	return (
 		<html lang="ru" className={[urbanist.variable, calSans.variable].join(" ")}>
 			<body>
-				<Particles
-					className="absolute inset-0 -z-10 animate-fade-in"
-					quantity={100}
-				/>
-				{children}
+				<div id="root">
+					<Particles
+						className="absolute inset-0 -z-10 animate-fade-in"
+						quantity={100}
+					/>
+					{children}
+				</div>
 			</body>
 		</html>
 	);

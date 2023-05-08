@@ -12,7 +12,10 @@ export const Navigation: FC<Props> = ({ className = "", ...props }) => {
 
 	return (
 		<nav>
-			<ul className={`flex items-center text-gray text-sm ${className}`} {...props}>
+			<ul
+				className={`flex items-center text-gray text-sm ${className}`}
+				{...props}
+			>
 				{navigationData.map((navItem) => (
 					<li
 						className={`hover:text-blue-500 active:scale-90 transition-transform duration-500 ${

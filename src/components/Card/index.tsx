@@ -22,9 +22,9 @@ export const Card: React.FC<PropsWithChildren<Props>> = ({
 	let style = { maskImage, WebkitMaskImage: maskImage };
 
 	return (
-		<div
+		<article
 			onMouseMove={onMouseMove}
-			className={`overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 ${className}`}
+			className={`overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 bg-gradient-to-tl from-black/10 to-black/0 ${className}`}
 			{...props}
 		>
 			<div className="pointer-events-none">
@@ -40,6 +40,6 @@ export const Card: React.FC<PropsWithChildren<Props>> = ({
 			</div>
 
 			{children}
-		</div>
+		</article>
 	);
 };
