@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-black text-white bg-gradient-to-tl bg-fixed from-zinc-900/0 via-zinc-900 to-zinc-900/0;
+    @apply bg-black text-white bg-gradient-to-tl bg-fixed from-zinc-900/0 via-zinc-900 to-zinc-900/0 overflow-x-hidden;
 }
 
 html, body, #root {
