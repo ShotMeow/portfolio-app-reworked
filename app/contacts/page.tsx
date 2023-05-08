@@ -27,9 +27,9 @@ const socials = [
 
 const ContactsPage: NextPage = () => {
 	return (
-		<main>
+		<>
 			<Header />
-			<div className="container h-full grid w-full mb-20 grid-cols-1 gap-8 mx-auto sm:grid-cols-2 xl:grid-cols-3 lg:gap-16">
+			<main className="container h-full grid w-full mb-20 grid-cols-1 gap-8 mx-auto sm:grid-cols-2 xl:grid-cols-3 lg:gap-16">
 				{socials.map((socialItem) => (
 					<Card
 						className="sm:last:col-start-1 sm:last:col-end-3 xl:last:col-auto bg-gradient-to-tl from-black/10 to-black/0"
@@ -58,8 +58,8 @@ const ContactsPage: NextPage = () => {
 						</Link>
 					</Card>
 				))}
-			</div>
-		</main>
+			</main>
+		</>
 	);
 };
 
