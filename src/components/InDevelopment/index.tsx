@@ -3,7 +3,7 @@ import { Header } from "@/src/components/Header";
 
 export const InDevelopment: FC = () => {
 	return (
-		<div className="overflow-hidden w-screen h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+		<div className="fixed left-0 top-0 overflow-hidden w-screen h-screen">
 			<Header />
 			<div className="h-full flex flex-col items-center justify-center gap-6 text-center container">
 				<h1 className="text-5xl md:text-8xl font-display">In development</h1>
