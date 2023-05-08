@@ -60,6 +60,5 @@ module.exports = {
 				DEFAULT: "1rem",
 			},
 		},
-	},
-	plugins: [require("@tailwindcss/typography")],
+	}
 };
