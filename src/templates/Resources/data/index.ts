@@ -33,7 +33,7 @@ export const resourcesData: ResourceType[] = [
 		href: "https://metatags.io/"
 	},
 	{
-		label: "Readme.sp",
+		label: "Readme.so",
 		description: "Удобный редактор README.md файла",
 		href: "https://readme.so/ru"
 	},
