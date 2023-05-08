@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Contacts } from "@/src/pages/Contacts";
+import { Contacts } from "@/src/templates/Contacts";
 
 const ContactsPage: NextPage = () => {
 	return <Contacts />;

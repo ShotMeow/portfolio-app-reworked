@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Resources } from "@/src/pages/Resources";
+import { Resources } from "@/src/templates/Resources";
 
 const ResourcesPage: NextPage = () => {
 	return <Resources />;
