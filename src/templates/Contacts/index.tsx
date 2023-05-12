@@ -17,10 +17,9 @@ export const Contacts: FC = () => {
 						На этой странице перечислены способы связаться со мной.
 					</p>
 				</div>
-				<section className="grid my-10 grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3 lg:gap-16">
+				<section className="grid py-10 grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-16">
 					{contactsData.map((item) => (
 						<Card
-							className="sm:last:col-start-1 sm:last:col-end-3 xl:last:col-auto"
 							key={item.label}
 						>
 							<Link

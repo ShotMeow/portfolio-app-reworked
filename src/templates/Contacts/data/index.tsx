@@ -1,5 +1,6 @@
 import { FaGithub, FaTelegramPlane } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import { BiCode } from "react-icons/all";
 
 import { ContactType } from "../types";
 
@@ -22,4 +23,10 @@ export const contactsData: ContactType[] = [
 		label: "Github",
 		handle: "shotmeow",
 	},
+	{
+		icon: <BiCode size={20} />,
+		href: "https://leetcode.com/ShotMeow",
+		label: "LeetCode",
+		handle: "ShotMeow",
+	}
 ];

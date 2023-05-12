@@ -64,7 +64,7 @@ export default function RootLayout({
 			<body>
 				<div id="root">
 					<Particles
-						className="absolute inset-0 -z-10 animate-fade-in"
+						className="absolute inset-0 -z-10 animate-fade-in hidden sm:block"
 						quantity={100}
 					/>
 					{children}
