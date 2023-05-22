@@ -15,6 +15,7 @@ const HomePage: NextPage = () => {
 					@shotmeow
 				</Link>
 			</h1>
+			{/*<span className="animate-date text-gray">{getDaysBeforeReturn()} дней до возвращения</span>*/}
 			<p className="text-gray animate-fade-in my-16">
 				Front-end Developer из А-БТ. Веду свой блог и помогаю другим <br />
 				разработчикам становиться сильнее.

@@ -21,6 +21,7 @@ module.exports = {
 				title: "title 2s ease-out forwards",
 				"fade-left": "fade-left 1s ease-in-out forwards",
 				"fade-right": "fade-right 1s ease-in-out forwards",
+				"date": "date 2s ease-in-out forwards"
 			},
 			keyframes: {
 				"fade-in": {
@@ -52,6 +53,19 @@ module.exports = {
 						opacity: "100%",
 					},
 				},
+				date: {
+					"0%": {
+						opacity: "0",
+					},
+
+					"60%": {
+						opacity: "0",
+					},
+
+					"100%": {
+						opacity: "1",
+					}
+				}
 			},
 		},
 		container: {
