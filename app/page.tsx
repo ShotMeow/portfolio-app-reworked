@@ -1,6 +1,8 @@
 import { NextPage } from "next";
-import { Navigation } from "@/src/components/Navigation";
 import Link from "next/link";
+
+import { Navigation } from "@/src/components/Navigation";
+import { getDaysBeforeReturn } from "@/src/utils/getDaysBeforeReturn";
 
 const HomePage: NextPage = () => {
 	return (
@@ -15,7 +17,7 @@ const HomePage: NextPage = () => {
 					@shotmeow
 				</Link>
 			</h1>
-			{/*<span className="animate-date text-gray">{getDaysBeforeReturn()} дней до возвращения</span>*/}
+			<span className="animate-date text-gray">{getDaysBeforeReturn()} до возвращения</span>
 			<p className="text-gray animate-fade-in my-16">
 				Front-end Developer из А-БТ. Веду свой блог и помогаю другим <br />
 				разработчикам становиться сильнее.
