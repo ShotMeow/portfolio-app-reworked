@@ -6,7 +6,7 @@ const getVerb = (days: number): string => {
 
 export const getDaysBeforeReturn = (): string => {
     const currentDate = new Date().getTime();
-    const returnDate = new Date(2024, 6, 3).getTime();
+    const returnDate = new Date(2024, 6, 6).getTime();
 
     const days = Math.round((returnDate - currentDate) / (1000 * 60 * 60 * 24));
 
